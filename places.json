@@ -1,0 +1,1762 @@
+[
+  {
+    "lat": 43.2728,
+    "lon": 18.7303,
+    "title": {
+      "en": "Via Dinarica Trail Section (near Maglić)",
+      "bs": "Dio staze Via Dinarica (blizu Maglića)",
+      "it": "Tratto del Sentiero Via Dinarica (vicino Maglić)",
+      "fr": "Section du sentier Via Dinarica (près de Maglić)",
+      "es": "Sección del Sendero Via Dinarica (cerca de Maglić)",
+      "de": "Via Dinarica Wegabschnitt (nahe Maglić)"
+    },
+    "cat": "hiking",
+    "desc": {
+      "en": "Part of the famous long-distance Via Dinarica route, leading through the wild landscapes near Maglić, the highest peak of BiH.",
+      "bs": "Dio poznate dugolinijske rute Via Dinarica, koja vodi kroz divlje predjele u blizini Maglića, najvišeg vrha BiH.",
+      "it": "Parte del famoso percorso a lunga distanza Via Dinarica, che attraversa i paesaggi selvaggi vicino a Maglić, la vetta più alta della BiH.",
+      "fr": "Partie du célèbre sentier de grande randonnée Via Dinarica, qui traverse les paysages sauvages près du Maglić.",
+      "es": "Parte de la famosa ruta de larga distancia Via Dinarica, que atraviesa los paisajes salvajes cerca de Maglić.",
+      "de": "Teil des berühmten Fernwanderwegs Via Dinarica, der durch die wilden Landschaften nahe Maglić führt."
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.3364,
+    "lon": 17.8483,
+    "title": {
+      "en": "Vilinac Peak",
+      "bs": "Vrh Vilinac",
+      "it": "Cima Vilinac",
+      "fr": "Sommet Vilinac",
+      "es": "Pico Vilinac",
+      "de": "Vilinac Gipfel"
+    },
+    "cat": "hiking",
+    "desc": {
+      "en": "A high peak of Čvrsnica Mountain offering panoramic views over Blidinje Nature Park.",
+      "bs": "Visoki vrh planine Čvrsnica s panoramskim pogledom na Park prirode Blidinje.",
+      "it": "Una cima elevata del monte Čvrsnica che offre viste panoramiche sul Parco Naturale Blidinje.",
+      "fr": "Un sommet élevé du mont Čvrsnica offrant une vue panoramique sur le parc naturel de Blidinje.",
+      "es": "Una alta cumbre de la montaña Čvrsnica que ofrece vistas panorámicas sobre el Parque Natural de Blidinje.",
+      "de": "Ein hoher Gipfel des Čvrsnica-Gebirges mit Panoramablick auf den Naturpark Blidinje."
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.4348,
+    "lon": 17.9351,
+    "title": {
+      "en": "Hiking Start Point near Rujište",
+      "bs": "Početna tačka za planinarenje kod Rujišta",
+      "it": "Punto di partenza escursionistico vicino a Rujište",
+      "fr": "Point de départ de randonnée près de Rujište",
+      "es": "Punto de inicio de senderismo cerca de Rujište",
+      "de": "Wanderstartpunkt bei Rujište"
+    },
+    "cat": "hiking",
+    "desc": {
+      "en": "Main starting area for trails leading toward Prenj Mountain.",
+      "bs": "Glavna početna tačka za staze koje vode prema planini Prenj.",
+      "it": "Punto di partenza principale per i sentieri che conducono al monte Prenj.",
+      "fr": "Point de départ principal pour les sentiers menant vers la montagne Prenj.",
+      "es": "Área principal de inicio de rutas hacia la montaña Prenj.",
+      "de": "Hauptausgangspunkt für Wege zum Prenj-Gebirge."
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.619,
+    "lon": 17.575,
+    "title": {
+      "en": "Hajdučka Vrata Rock Formation",
+      "bs": "Stijena Hajdučka Vrata",
+      "it": "Formazione rocciosa Hajdučka Vrata",
+      "fr": "Formation rocheuse Hajdučka Vrata",
+      "es": "Formación rocosa Hajdučka Vrata",
+      "de": "Felsformation Hajdučka Vrata"
+    },
+    "cat": "hiking",
+    "desc": {
+      "en": "Iconic natural arch on Čvrsnica Mountain, popular among hikers.",
+      "bs": "Ikonični prirodni luk na planini Čvrsnica, popularan među planinarima.",
+      "it": "Iconico arco naturale sul monte Čvrsnica, molto popolare tra gli escursionisti.",
+      "fr": "Arche naturelle emblématique sur le mont Čvrsnica, prisée des randonneurs.",
+      "es": "Icónico arco natural en la montaña Čvrsnica, popular entre los excursionistas.",
+      "de": "Ikonischer Naturbogen am Čvrsnica, beliebt bei Wanderern."
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.5961,
+    "lon": 18.3469,
+    "title": {
+      "en": "Mala Ćaba Peak (Treskavica)",
+      "bs": "Vrh Mala Ćaba (Treskavica)",
+      "it": "Cima Mala Ćaba (Treskavica)",
+      "fr": "Sommet Mala Ćaba (Treskavica)",
+      "es": "Pico Mala Ćaba (Treskavica)",
+      "de": "Mala Ćaba Gipfel (Treskavica)"
+    },
+    "cat": "hiking",
+    "desc": {
+      "en": "A scenic summit on Treskavica known for clear glacial lakes and alpine terrain.",
+      "bs": "Slikoviti vrh na Treskavici poznat po bistrim ledenjačkim jezerima i alpskom terenu.",
+      "it": "Vetta panoramica della Treskavica rinomata per i laghi glaciali limpidi e il terreno alpino.",
+      "fr": "Un sommet pittoresque sur Treskavica célèbre pour ses lacs glaciaires clairs et son terrain alpin.",
+      "es": "Una cima pintoresca en Treskavica conocida por sus lagos glaciares claros y su terreno alpino.",
+      "de": "Ein malerischer Gipfel auf der Treskavica mit klaren Gletscherseen und alpinem Gelände."
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.9567,
+    "lon": 17.7167,
+    "title": {
+      "en": "Vranica Mountain (Nadkrstac Peak)",
+      "bs": "Planina Vranica (vrh Nadkrstac)",
+      "it": "Monte Vranica (Cima Nadkrstac)",
+      "fr": "Montagne Vranica (Sommet Nadkrstac)",
+      "es": "Montaña Vranica (Pico Nadkrstac)",
+      "de": "Vranica Gebirge (Nadkrstac Gipfel)"
+    },
+    "cat": "hiking",
+    "desc": {
+      "en": "A gentle mountain massif featuring forest paths and views over Prokoško Lake.",
+      "bs": "Blagi masiv planine s šumskim stazama i pogledom na Prokoško jezero.",
+      "it": "Un dolce massiccio montuoso con sentieri forestali e vista sul lago Prokoško.",
+      "fr": "Un doux massif montagneux avec des sentiers forestiers et une vue sur le lac Prokoško.",
+      "es": "Un suave macizo montañoso con senderos forestales y vistas al lago Prokoško.",
+      "de": "Ein sanftes Gebirgsmassiv mit Waldwegen und Blick auf den Prokoško-See."
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.2625,
+    "lon": 17.9622,
+    "title": {
+      "en": "Velež Mountain (Botin Peak)",
+      "bs": "Planina Velež (vrh Botin)",
+      "it": "Monte Velež (Cima Botin)",
+      "fr": "Montagne Velež (Sommet Botin)",
+      "es": "Montaña Velež (Pico Botin)",
+      "de": "Velež Gebirge (Botin Gipfel)"
+    },
+    "cat": "hiking",
+    "desc": {
+      "en": "A rocky Herzegovinian mountain rewarding hikers with sweeping views of Mostar.",
+      "bs": "Stjenovita hercegovačka planina koja planinarima nudi predivan pogled na Mostar.",
+      "it": "Una montagna rocciosa dell'Erzegovina che offre ampie vedute di Mostar agli escursionisti.",
+      "fr": "Montagne rocheuse d'Herzégovine offrant aux randonneurs des vues spectaculaires sur Mostar.",
+      "es": "Montaña rocosa de Herzegovina que recompensa a los excursionistas con amplias vistas de Mostar.",
+      "de": "Ein felsiger herzegowinischer Berg mit weitem Blick auf Mostar."
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.7497,
+    "lon": 18.2803,
+    "title": {
+      "en": "Bjelašnica Peak",
+      "bs": "Vrh Bjelašnica",
+      "it": "Cima Bjelašnica",
+      "fr": "Sommet Bjelašnica",
+      "es": "Pico Bjelašnica",
+      "de": "Bjelašnica Gipfel"
+    },
+    "cat": "ski",
+    "desc": {
+      "en": "One of Sarajevo's Olympic mountains, known for alpine sports and hiking.",
+      "bs": "Jedna od olimpijskih planina Sarajeva, poznata po alpskim sportovima i planinarenju.",
+      "it": "Una delle montagne olimpiche di Sarajevo, conosciuta per gli sport alpini e l'escursionismo.",
+      "fr": "L'une des montagnes olympiques de Sarajevo, connue pour les sports alpins et la randonnée.",
+      "es": "Una de las montañas olímpicas de Sarajevo, conocida por deportes alpinos y senderismo.",
+      "de": "Einer der olympischen Berge Sarajevos, bekannt für alpine Sportarten und Wandern."
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.7142,
+    "lon": 18.2917,
+    "title": {
+      "en": "O.C. Bjelašnica Ski Center",
+      "bs": "Ski centar O.C. Bjelašnica",
+      "it": "Centro sciistico O.C. Bjelašnica",
+      "fr": "Centre de ski O.C. Bjelašnica",
+      "es": "Centro de esquí O.C. Bjelašnica",
+      "de": "Skizentrum O.C. Bjelašnica"
+    },
+    "cat": "ski",
+    "desc": {
+      "en": "Main ski resort on Bjelašnica with Olympic-grade slopes.",
+      "bs": "Glavno skijalište na Bjelašnici s olimpijskim stazama.",
+      "it": "Principale stazione sciistica sulla Bjelašnica con piste olimpiche.",
+      "fr": "La principale station de ski sur la Bjelašnica avec des pistes de niveau olympique.",
+      "es": "Principal estación de esquí en Bjelašnica con pistas de nivel olímpico.",
+      "de": "Hauptskigebiet auf der Bjelašnica mit olympiareifen Pisten."
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.6265,
+    "lon": 18.2259,
+    "title": {
+      "en": "Lukomir Village",
+      "bs": "Selo Lukomir",
+      "it": "Villaggio di Lukomir",
+      "fr": "Village de Lukomir",
+      "es": "Pueblo de Lukomir",
+      "de": "Dorf Lukomir"
+    },
+    "cat": "historic",
+    "desc": {
+      "en": "The highest and most isolated traditional village in BiH, known for preserved stone houses.",
+      "bs": "Najviše i najizoliranije tradicionalno selo u BiH, poznato po očuvanim kamenim kućama.",
+      "it": "Il villaggio tradizionale più alto e isolato della BiH, noto per le case in pietra conservate.",
+      "fr": "Le village traditionnel le plus élevé et isolé de Bosnie-Herzégovine, connu pour ses maisons en pierre préservées.",
+      "es": "El pueblo tradicional más alto y aislado de Bosnia y Herzegovina, conocido por sus casas de piedra bien conservadas.",
+      "de": "Das höchstgelegene und abgelegenste traditionelle Dorf in Bosnien und Herzegowina, bekannt für seine erhaltenen Steinhäuser."
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.834,
+    "lon": 18.4239,
+    "title": {
+      "en": "Olympic Bob Sleigh Track, Trebević",
+      "bs": "Olimpijska bob staza, Trebević",
+      "it": "Pista da bob olimpica, Trebević",
+      "fr": "Piste de bobsleigh olympique, Trebević",
+      "es": "Pista de bobsleigh olímpica, Trebević",
+      "de": "Olympische Bobbahn, Trebević"
+    },
+    "cat": "extreme",
+    "desc": {
+      "en": "Abandoned Olympic bobsleigh track turned into an urban exploration site.",
+      "bs": "Napustena olimpijska bob staza pretvorena u lokaciju za urbanu avanturu.",
+      "it": "Pista da bob olimpica abbandonata trasformata in luogo di esplorazione urbana.",
+      "fr": "Piste de bobsleigh olympique abandonnée transformée en site d'exploration urbaine.",
+      "es": "Pista olímpica de bobsleigh abandonada convertida en un sitio de exploración urbana.",
+      "de": "Verlassene olympische Bobbahn, die zu einem Ort für urbane Erkundungen wurde."
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.9015,
+    "lon": 18.6015,
+    "title": {
+      "en": "Via Ferrata 'Falcons Road', Romanija",
+      "bs": "Via ferrata 'Falcons Road', Romanija",
+      "it": "Via ferrata 'Falcons Road', Romanija",
+      "fr": "Via ferrata 'Falcons Road', Romanija",
+      "es": "Via ferrata 'Falcons Road', Romanija",
+      "de": "Via ferrata 'Falcons Road', Romanija"
+    },
+    "cat": "extreme",
+    "desc": {
+      "en": "A secured climbing route with dramatic rock scenery.",
+      "bs": "Osigurana penjačka ruta s dramatičnim stjenovitim pejzažima.",
+      "it": "Una via ferrata sicura con scenari rocciosi spettacolari.",
+      "fr": "Un itinéraire d'escalade sécurisé avec des paysages rocheux spectaculaires.",
+      "es": "Ruta de escalada asegurada con un paisaje rocoso espectacular.",
+      "de": "Gesicherte Kletterroute mit dramatischer Felslandschaft."
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.2574,
+    "lon": 17.8876,
+    "title": {
+      "en": "Blagaj Rock Climbing",
+      "bs": "Penjanje u Blagaju",
+      "it": "Arrampicata a Blagaj",
+      "fr": "Escalade à Blagaj",
+      "es": "Escalada en Blagaj",
+      "de": "Klettern in Blagaj"
+    },
+    "cat": "extreme",
+    "desc": {
+      "en": "Popular vertical limestone cliffs above the Buna River.",
+      "bs": "Popularne vertikalne stijene iznad rijeke Bune.",
+      "it": "Falesie verticali di calcare popolari sopra il fiume Buna.",
+      "fr": "Falaises verticales calcaires populaires au-dessus de la rivière Buna.",
+      "es": "Populares acantilados verticales de piedra caliza sobre el río Buna.",
+      "de": "Beliebte vertikale Kalksteinfelsen über der Buna."
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.8576,
+    "lon": 18.3283,
+    "title": {
+      "en": "Dariva Rock Climbing, Sarajevo",
+      "bs": "Penjanje Dariva, Sarajevo",
+      "it": "Arrampicata Dariva, Sarajevo",
+      "fr": "Escalade Dariva, Sarajevo",
+      "es": "Escalada Dariva, Sarajevo",
+      "de": "Klettern Dariva, Sarajevo"
+    },
+    "cat": "extreme",
+    "desc": {
+      "en": "Urban climbing sector in the Dariva canyon.",
+      "bs": "Urbana penjačka zona u kanjonu Dariva.",
+      "it": "Settore urbano di arrampicata nella gola di Dariva.",
+      "fr": "Secteur d'escalade urbain dans le canyon de Dariva.",
+      "es": "Sector de escalada urbana en el cañón de Dariva.",
+      "de": "Urbanes Klettergebiet in der Dariva-Schlucht."
+    },
+    "photo": null
+  },
+  {
+    "lat": 44.7371,
+    "lon": 17.1511,
+    "title": {
+      "en": "Canyon Tijesno, near Banja Luka",
+      "bs": "Kanjon Tijesno, blizu Banja Luke",
+      "it": "Canyon Tijesno, vicino Banja Luka",
+      "fr": "Canyon Tijesno, près de Banja Luka",
+      "es": "Cañón Tijesno, cerca de Banja Luka",
+      "de": "Schlucht Tijesno, nahe Banja Luka"
+    },
+    "cat": "extreme",
+    "desc": {
+      "en": "Deep canyon ideal for kayaking, canyoning and extreme sports.",
+      "bs": "Duboki kanjon idealan za kajak, kanjoning i ekstremne sportove.",
+      "it": "Canyon profondo ideale per il kayak, il canyoning e sport estremi.",
+      "fr": "Canyon profond idéal pour le kayak, le canyoning et les sports extrêmes.",
+      "es": "Cañón profundo ideal para kayak, barranquismo y deportes extremos.",
+      "de": "Tiefe Schlucht, ideal zum Kajakfahren, Canyoning und für Extremsport."
+    },
+    "photo": null
+  },
+  {
+    "lat": 44.9818,
+    "lon": 16.8927,
+    "title": {
+      "en": "Kozara National Park",
+      "bs": "Nacionalni park Kozara",
+      "it": "Parco Nazionale di Kozara",
+      "fr": "Parc National de Kozara",
+      "es": "Parque Nacional de Kozara",
+      "de": "Nationalpark Kozara"
+    },
+    "cat": "national_park",
+    "desc": {
+      "en": "Mountain park with forests, wildlife and WW2 memorial sites.",
+      "bs": "Planinski park sa šumama, divljim životinjama i spomenicima iz Drugog svjetskog rata.",
+      "it": "Parco montano con foreste, fauna selvatica e monumenti della Seconda Guerra Mondiale.",
+      "fr": "Parc de montagne avec forêts, faune sauvage et monuments de la Seconde Guerre mondiale.",
+      "es": "Parque de montaña con bosques, fauna silvestre y monumentos de la Segunda Guerra Mundial.",
+      "de": "Gebirgspark mit Wäldern, Wildtieren und Denkmälern aus dem Zweiten Weltkrieg."
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.7178,
+    "lon": 18.5664,
+    "title": {
+      "en": "Jahorina Ski Resort",
+      "bs": "Skijalište Jahorina",
+      "it": "Stazione sciistica Jahorina",
+      "fr": "Station de ski Jahorina",
+      "es": "Estación de esquí Jahorina",
+      "de": "Skigebiet Jahorina"
+    },
+    "cat": "ski",
+    "desc": {
+      "en": "The biggest and most modern ski center in BiH, famous for winter sports.",
+      "bs": "Najveći i najmoderniji ski-centar u BiH, poznat po zimskim sportovima.",
+      "it": "Il più grande e moderno centro sciistico della BiH, famoso per gli sport invernali.",
+      "fr": "La plus grande et la plus moderne station de ski de Bosnie-Herzégovine, célèbre pour les sports d'hiver.",
+      "es": "El mayor y más moderno centro de esquí de Bosnia y Herzegovina, famoso por los deportes de invierno.",
+      "de": "Das größte und modernste Skizentrum in Bosnien und Herzegowina, bekannt für Wintersport."
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.6111,
+    "lon": 17.51,
+    "title": {
+      "en": "Blidinje Ski Resort, Risovac",
+      "bs": "Skijalište Blidinje, Risovac",
+      "it": "Stazione sciistica Blidinje, Risovac",
+      "fr": "Station de ski Blidinje, Risovac",
+      "es": "Estación de esquí Blidinje, Risovac",
+      "de": "Skigebiet Blidinje, Risovac"
+    },
+    "cat": "ski",
+    "desc": {
+      "en": "Family-friendly ski resort located inside Blidinje Nature Park.",
+      "bs": "Obiteljsko skijalište smješteno unutar Parka prirode Blidinje.",
+      "it": "Stazione sciistica per famiglie situata all'interno del Parco Naturale Blidinje.",
+      "fr": "Station de ski familiale située dans le parc naturel de Blidinje.",
+      "es": "Estación de esquí familiar situada en el Parque Natural Blidinje.",
+      "de": "Familienfreundliches Skigebiet im Naturpark Blidinje."
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.9678,
+    "lon": 17.2608,
+    "title": {
+      "en": "Kupres Ski Resort (Adria Ski)",
+      "bs": "Skijalište Kupres (Adria Ski)",
+      "it": "Stazione sciistica Kupres (Adria Ski)",
+      "fr": "Station de ski Kupres (Adria Ski)",
+      "es": "Estación de esquí Kupres (Adria Ski)",
+      "de": "Skigebiet Kupres (Adria Ski)"
+    },
+    "cat": "ski",
+    "desc": {
+      "en": "Well-known ski center with long, open runs.",
+      "bs": "Poznato skijalište s dugim, otvorenim stazama.",
+      "it": "Famoso centro sciistico con lunghe e ampie piste.",
+      "fr": "Centre de ski réputé avec de longues pistes dégagées.",
+      "es": "Conocido centro de esquí con pistas largas y abiertas.",
+      "de": "Bekanntes Skizentrum mit langen, offenen Pisten."
+    },
+    "photo": null
+  },
+  {
+    "lat": 44.2709,
+    "lon": 17.5819,
+    "title": {
+      "en": "Vlašić Ski Resort",
+      "bs": "Skijalište Vlašić",
+      "it": "Stazione sciistica Vlašić",
+      "fr": "Station de ski Vlašić",
+      "es": "Estación de esquí Vlašić",
+      "de": "Skigebiet Vlašić"
+    },
+    "cat": "ski",
+    "desc": {
+      "en": "One of the most visited winter destinations in central BiH.",
+      "bs": "Jedna od najposjećenijih zimskih destinacija u centralnoj BiH.",
+      "it": "Una delle mete invernali più visitate della Bosnia centrale.",
+      "fr": "L'une des destinations hivernales les plus visitées en Bosnie centrale.",
+      "es": "Uno de los destinos invernales más visitados del centro de Bosnia.",
+      "de": "Eines der meistbesuchten Winterziele in Zentralbosnien."
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.8188,
+    "lon": 18.5779,
+    "title": {
+      "en": "Ski Centar Ravna Planina",
+      "bs": "Ski centar Ravna Planina",
+      "it": "Centro sciistico Ravna Planina",
+      "fr": "Centre de ski Ravna Planina",
+      "es": "Centro de esquí Ravna Planina",
+      "de": "Skizentrum Ravna Planina"
+    },
+    "cat": "ski",
+    "desc": {
+      "en": "Modern ski facility near Sarajevo, offering skiing and gondola rides.",
+      "bs": "Moderno skijalište pored Sarajeva, nudi skijanje i vožnju gondolom.",
+      "it": "Moderno impianto sciistico vicino a Sarajevo, offre sci e gite in funivia.",
+      "fr": "Station de ski moderne près de Sarajevo, proposant ski et téléphérique.",
+      "es": "Instalación de esquí moderna cerca de Sarajevo, ofrece esquí y paseos en góndola.",
+      "de": "Modernes Skigebiet in der Nähe von Sarajevo mit Skifahren und Gondelbahn."
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.2389,
+    "lon": 17.785,
+    "title": {
+      "en": "Autocamp Green Park, Mostar",
+      "bs": "Autokamp Green Park, Mostar",
+      "it": "Campeggio Green Park, Mostar",
+      "fr": "Camping Green Park, Mostar",
+      "es": "Autocamping Green Park, Mostar",
+      "de": "Autocamp Green Park, Mostar"
+    },
+    "cat": "camping",
+    "desc": {
+      "en": "Riverside camp near Mostar offering quiet natural surroundings.",
+      "bs": "Kamp uz rijeku blizu Mostara s mirnim prirodnim okruženjem.",
+      "it": "Campeggio sulle rive vicino a Mostar che offre un ambiente naturale tranquillo.",
+      "fr": "Camping au bord de la rivière près de Mostar, offre un cadre naturel paisible.",
+      "es": "Campamento junto al río cerca de Mostar con un entorno natural tranquilo.",
+      "de": "Flusscamp in der Nähe von Mostar mit ruhiger natürlicher Umgebung."
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.2562,
+    "lon": 17.8687,
+    "title": {
+      "en": "River Camp Buna - Half Island",
+      "bs": "Rijeka kamp Buna - Poluostrvo",
+      "it": "Campeggio fluviale Buna - Mezz'isola",
+      "fr": "Camping fluvial Buna - Demi-île",
+      "es": "Campamento fluvial Buna - Media Isla",
+      "de": "Flusscamp Buna - Halbinsel"
+    },
+    "cat": "camping",
+    "desc": {
+      "en": "Camping spot set on a peninsula at the Buna River.",
+      "bs": "Kamp na poluostrvu uz rijeku Bunu.",
+      "it": "Piazzola da campeggio situata su una penisola sul fiume Buna.",
+      "fr": "Emplacement de camping situé sur une péninsule à la rivière Buna.",
+      "es": "Zona de camping ubicada en una península del río Buna.",
+      "de": "Campingplatz auf einer Halbinsel an der Buna."
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.2429,
+    "lon": 17.886,
+    "title": {
+      "en": "River Camp Bara, Blagaj",
+      "bs": "Rijeka kamp Bara, Blagaj",
+      "it": "Campeggio fluviale Bara, Blagaj",
+      "fr": "Camping fluvial Bara, Blagaj",
+      "es": "Campamento fluvial Bara, Blagaj",
+      "de": "Flusscamp Bara, Blagaj"
+    },
+    "cat": "camping",
+    "desc": {
+      "en": "Family-friendly camp beside the Buna River.",
+      "bs": "Porodični kamp pored rijeke Bune.",
+      "it": "Campeggio adatto alle famiglie accanto al fiume Buna.",
+      "fr": "Camping familial au bord de la Buna.",
+      "es": "Campamento familiar junto al río Buna.",
+      "de": "Familienfreundlicher Campingplatz neben der Buna."
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.1021,
+    "lon": 17.9547,
+    "title": {
+      "en": "River Camp Heaven in Nature, Stolac",
+      "bs": "Rijeka kamp Heaven in Nature, Stolac",
+      "it": "Campeggio fluviale Heaven in Nature, Stolac",
+      "fr": "Camping fluvial Heaven in Nature, Stolac",
+      "es": "Campamento fluvial Heaven in Nature, Stolac",
+      "de": "Flusscamp Heaven in Nature, Stolac"
+    },
+    "cat": "camping",
+    "desc": {
+      "en": "Nature-immersed riverside campground near Stolac.",
+      "bs": "Kamp u prirodi uz rijeku blizu Stoca.",
+      "it": "Campeggio immerso nella natura vicino a Stolac.",
+      "fr": "Camping en pleine nature au bord de la rivière près de Stolac.",
+      "es": "Campamento junto al río inmerso en la naturaleza cerca de Stolac.",
+      "de": "Naturverbundener Flusscampingplatz nahe Stolac."
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.5134,
+    "lon": 18.0267,
+    "title": {
+      "en": "Camping on Boračko Lake",
+      "bs": "Kampiranje na jezeru Boračko",
+      "it": "Campeggio sul lago Boračko",
+      "fr": "Camping au lac Boračko",
+      "es": "Camping en el lago Boračko",
+      "de": "Camping am Boračko-See"
+    },
+    "cat": "camping",
+    "desc": {
+      "en": "Lakeside camping area surrounded by forest.",
+      "bs": "Kamp uz jezero okružen šumom.",
+      "it": "Area campeggio in riva al lago circondata da boschi.",
+      "fr": "Camping au bord du lac entouré de forêt.",
+      "es": "Área de camping junto al lago rodeada de bosque.",
+      "de": "Camping am See, umgeben von Wald."
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.3444,
+    "lon": 18.6656,
+    "title": {
+      "en": "Camping in Sutjeska National Park",
+      "bs": "Kampiranje u Nacionalnom parku Sutjeska",
+      "it": "Campeggio nel Parco Nazionale Sutjeska",
+      "fr": "Camping dans le Parc National de Sutjeska",
+      "es": "Camping en el Parque Nacional Sutjeska",
+      "de": "Camping im Nationalpark Sutjeska"
+    },
+    "cat": "camping",
+    "desc": {
+      "en": "Campground inside the oldest national park of BiH.",
+      "bs": "Kamp unutar najstarijeg nacionalnog parka u BiH.",
+      "it": "Campeggio all'interno del più antico parco nazionale della BiH.",
+      "fr": "Camping dans le plus ancien parc national de Bosnie-Herzégovine.",
+      "es": "Zona de acampada dentro del parque nacional más antiguo de BiH.",
+      "de": "Campingplatz im ältesten Nationalpark von Bosnien und Herzegowina."
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.834,
+    "lon": 18.4239,
+    "title": {
+      "en": "Bike Park Evolution, East Sarajevo",
+      "bs": "Bajk park Evolution, Istočno Sarajevo",
+      "it": "Bike Park Evolution, Sarajevo Est",
+      "fr": "Bike Park Evolution, Sarajevo Est",
+      "es": "Bike Park Evolution, Sarajevo Este",
+      "de": "Bike Park Evolution, Ost-Sarajevo"
+    },
+    "cat": "mtb",
+    "desc": {
+      "en": "Downhill and enduro MTB park with built trails.",
+      "bs": "Downhill i enduro MTB park sa uređenim stazama.",
+      "it": "Bike park da downhill ed enduro con sentieri costruiti.",
+      "fr": "Parc VTT de descente et enduro avec pistes aménagées.",
+      "es": "Parque de MTB de descenso y enduro con senderos preparados.",
+      "de": "Downhill- und Enduro-MTB-Park mit angelegten Strecken."
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.3443,
+    "lon": 17.8099,
+    "title": {
+      "en": "Ćiro Trail (Mostar to Trebinje)",
+      "bs": "Staza Ćiro (Mostar - Trebinje)",
+      "it": "Sentiero Ćiro (Mostar - Trebinje)",
+      "fr": "Sentier Ćiro (Mostar - Trebinje)",
+      "es": "Sendero Ćiro (Mostar - Trebinje)",
+      "de": "Ćiro Weg (Mostar - Trebinje)"
+    },
+    "cat": "mtb",
+    "desc": {
+      "en": "Long gravel cycling route following the old narrow-gauge railway.",
+      "bs": "Duga makadamska biciklistička staza koja prati staru uskotračnu željezničku prugu.",
+      "it": "Lunga pista ciclabile in ghiaia che segue la vecchia ferrovia a scartamento ridotto.",
+      "fr": "Long itinéraire cyclable en gravier suivant l'ancienne voie ferrée à écartement réduit.",
+      "es": "Larga ruta ciclista de grava siguiendo el antiguo ferrocarril de vía estrecha.",
+      "de": "Lange Schotterradroute entlang der ehemaligen Schmalspurbahn."
+    },
+    "photo": null
+  },
+  {
+    "lat": 42.7121,
+    "lon": 18.3496,
+    "title": {
+      "en": "Ćiro Trail (Trebinje end)",
+      "bs": "Staza Ćiro (Trebinje kraj)",
+      "it": "Sentiero Ćiro (fine Trebinje)",
+      "fr": "Sentier Ćiro (fin Trebinje)",
+      "es": "Sendero Ćiro (final Trebinje)",
+      "de": "Ćiro Weg (Trebinje Ende)"
+    },
+    "cat": "mtb",
+    "desc": {
+      "en": "Long gravel cycling route following the old narrow-gauge railway.",
+      "bs": "Duga makadamska biciklistička staza koja prati staru uskotračnu željezničku prugu.",
+      "it": "Lunga pista ciclabile in ghiaia che segue la vecchia ferrovia a scartamento ridotto.",
+      "fr": "Long itinéraire cyclable en gravier suivant l'ancienne voie ferrée à écartement réduit.",
+      "es": "Larga ruta ciclista de grava siguiendo el antiguo ferrocarril de vía estrecha.",
+      "de": "Lange Schotterradroute entlang der ehemaligen Schmalspurbahn."
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.7088,
+    "lon": 17.2343,
+    "title": {
+      "en": "Trans Dinarica Route (Tomislavgrad)",
+      "bs": "Trans Dinarica ruta (Tomislavgrad)",
+      "it": "Rotta Trans Dinarica (Tomislavgrad)",
+      "fr": "Route Trans Dinarica (Tomislavgrad)",
+      "es": "Ruta Trans Dinarica (Tomislavgrad)",
+      "de": "Trans Dinarica Route (Tomislavgrad)"
+    },
+    "cat": "mtb",
+    "desc": {
+      "en": "Part of the major Balkan MTB route crossing BiH.",
+      "bs": "Dio glavne balkanske MTB rute koja prelazi kroz BiH.",
+      "it": "Parte della principale rotta balcanica MTB che attraversa la Bosnia.",
+      "fr": "Partie de la grande route VTT des Balkans traversant la Bosnie.",
+      "es": "Parte de la principal ruta de MTB de los Balcanes que cruza Bosnia.",
+      "de": "Teil der großen Balkan-MTB-Route durch Bosnien."
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.605,
+    "lon": 17.559,
+    "title": {
+      "en": "Blidinje Nature Park Bike Trails",
+      "bs": "Biciklističke staze u Parku prirode Blidinje",
+      "it": "Percorsi MTB nel Parco Naturale Blidinje",
+      "fr": "Pistes VTT dans le parc naturel de Blidinje",
+      "es": "Rutas MTB en el Parque Natural Blidinje",
+      "de": "MTB-Strecken im Naturpark Blidinje"
+    },
+    "cat": "mtb",
+    "desc": {
+      "en": "MTB trails inside Blidinje Park.",
+      "bs": "MTB staze unutar Parka prirode Blidinje.",
+      "it": "Percorsi MTB all'interno del Parco di Blidinje.",
+      "fr": "Pistes VTT dans le parc naturel de Blidinje.",
+      "es": "Rutas MTB dentro del parque Blidinje.",
+      "de": "MTB-Strecken im Naturpark Blidinje."
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.3414,
+    "lon": 17.808,
+    "title": {
+      "en": "Mostar Urban Cycling",
+      "bs": "Urbano bicikliranje u Mostaru",
+      "it": "Ciclismo urbano a Mostar",
+      "fr": "Cyclisme urbain à Mostar",
+      "es": "Ciclismo urbano en Mostar",
+      "de": "Urbanes Radfahren in Mostar"
+    },
+    "cat": "mtb",
+    "desc": {
+      "en": "Urban cycling paths and recreational routes in Mostar.",
+      "bs": "Urbane biciklističke staze i rekreativne rute u Mostaru.",
+      "it": "Percorsi ciclabili urbani e rotte ricreative a Mostar.",
+      "fr": "Pistes cyclables urbaines et itinéraires de loisirs à Mostar.",
+      "es": "Senderos ciclistas urbanos y rutas recreativas en Mostar.",
+      "de": "Städtische Radwege und Freizeitrouten in Mostar."
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.619,
+    "lon": 17.575,
+    "title": {
+      "en": "Blidinje Nature Park",
+      "bs": "Park prirode Blidinje",
+      "it": "Parco Naturale Blidinje",
+      "fr": "Parc Naturel Blidinje",
+      "es": "Parque Natural Blidinje",
+      "de": "Naturpark Blidinje"
+    },
+    "cat": "national_park",
+    "desc": {
+      "en": "Alpine plateau known for forests, lakes and dramatic peaks.",
+      "bs": "Alpska visoravan poznata po šumama, jezerima i dramatičnim vrhovima.",
+      "it": "Altopiano alpino noto per foreste, laghi e vette spettacolari.",
+      "fr": "Plateau alpin connu pour ses forêts, lacs et sommets spectaculaires.",
+      "es": "Meseta alpina conocida por sus bosques, lagos y picos espectaculares.",
+      "de": "Alpines Plateau bekannt für Wälder, Seen und dramatische Gipfel."
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.05,
+    "lon": 17.75,
+    "title": {
+      "en": "Hutovo Blato Nature Park",
+      "bs": "Park prirode Hutovo Blato",
+      "it": "Parco Naturale Hutovo Blato",
+      "fr": "Parc Naturel Hutovo Blato",
+      "es": "Parque Natural Hutovo Blato",
+      "de": "Naturpark Hutovo Blato"
+    },
+    "cat": "national_park",
+    "desc": {
+      "en": "Birdwatching paradise with wetlands and unique biodiversity.",
+      "bs": "Raj za promatranje ptica s močvarama i jedinstvenim biodiverzitetom.",
+      "it": "Paradiso per il birdwatching con zone umide e biodiversità unica.",
+      "fr": "Paradis d'observation des oiseaux, zones humides et biodiversité unique.",
+      "es": "Paraíso para la observación de aves con humedales y biodiversidad única.",
+      "de": "Paradies für Vogelbeobachtung mit Feuchtgebieten und einzigartiger Biodiversität."
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.818867,
+    "lon": 18.269447,
+    "title": {
+      "en": "Vrelo Bosne Natural Monument",
+      "bs": "Prirodni spomenik Vrelo Bosne",
+      "it": "Monumento Naturale Vrelo Bosne",
+      "fr": "Monument Naturel Vrelo Bosne",
+      "es": "Monumento Natural Vrelo Bosne",
+      "de": "Naturdenkmal Vrelo Bosne"
+    },
+    "cat": "spring",
+    "desc": {
+      "en": "Crystal-clear natural spring and park area at the foot of Mount Igman.",
+      "bs": "Kristalno čist prirodni izvor i park na podnožju Igmana.",
+      "it": "Sorgente naturale cristallina e area parco ai piedi del Monte Igman.",
+      "fr": "Source naturelle cristalline et parc au pied du mont Igman.",
+      "es": "Manantial natural cristalino y zona de parque al pie del monte Igman.",
+      "de": "Kristallklare Quelle und Parkanlage am Fuße des Igman."
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.9575,
+    "lon": 18.5283,
+    "title": {
+      "en": "Bijambare Protected Landscape",
+      "bs": "Zaštićeni krajolik Bijambare",
+      "it": "Paesaggio Protetto Bijambare",
+      "fr": "Paysage Protégé Bijambare",
+      "es": "Paisaje Protegido Bijambare",
+      "de": "Geschützte Landschaft Bijambare"
+    },
+    "cat": "national_park",
+    "desc": {
+      "en": "Nature area featuring caves, forests and walking paths.",
+      "bs": "Prirodno područje sa pećinama, šumama i pješačkim stazama.",
+      "it": "Area naturale con grotte, foreste e sentieri pedonali.",
+      "fr": "Espace naturel avec grottes, forêts et sentiers de promenade.",
+      "es": "Área natural con cuevas, bosques y senderos peatonales.",
+      "de": "Naturschutzgebiet mit Höhlen, Wäldern und Wanderwegen."
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.5134,
+    "lon": 18.0267,
+    "title": {
+      "en": "Boračko Lake",
+      "bs": "Jezero Boračko",
+      "it": "Lago Boračko",
+      "fr": "Lac Boračko",
+      "es": "Lago Boračko",
+      "de": "Boračko-See"
+    },
+    "cat": "lake",
+    "desc": {
+      "en": "A glacial lake near Konjic, surrounded by steep mountains.",
+      "bs": "Ledničko jezero blizu Konjica, okruženo strmim planinama.",
+      "it": "Lago glaciale vicino a Konjic, circondato da montagne ripide.",
+      "fr": "Un lac glaciaire près de Konjic, entouré de montagnes escarpées.",
+      "es": "Lago glaciar cerca de Konjic, rodeado de montañas empinadas.",
+      "de": "Gletschersee nahe Konjic, umgeben von steilen Bergen."
+    },
+    "photo": null
+  },
+  {
+    "lat": 44.02,
+    "lon": 16.84,
+    "title": {
+      "en": "Šatorsko Lake",
+      "bs": "Jezero Šatorsko",
+      "it": "Lago Šatorsko",
+      "fr": "Lac Šatorsko",
+      "es": "Lago Šatorsko",
+      "de": "Šatorsko-See"
+    },
+    "cat": "lake",
+    "desc": {
+      "en": "Mountain lake below Mount Šator, known for pristine scenery.",
+      "bs": "Planinsko jezero ispod planine Šator poznato po netaknutoj prirodi.",
+      "it": "Lago di montagna sotto il monte Šator, noto per i paesaggi incontaminati.",
+      "fr": "Lac de montagne sous le mont Šator, connu pour ses paysages vierges.",
+      "es": "Lago de montaña bajo el monte Šator, conocido por su paisaje prístino.",
+      "de": "Gebirgssee unterhalb des Šator, bekannt für unberührte Landschaft."
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.9926,
+    "lon": 17.8286,
+    "title": {
+      "en": "Prokoško Lake",
+      "bs": "Jezero Prokoško",
+      "it": "Lago Prokoško",
+      "fr": "Lac Prokoško",
+      "es": "Lago Prokoško",
+      "de": "Prokoško-See"
+    },
+    "cat": "lake",
+    "desc": {
+      "en": "High-altitude lake beside shepherd huts on Vranica Mountain.",
+      "bs": "Visokoplaninsko jezero pored pastirskih koliba na planini Vranica.",
+      "it": "Lago d'alta quota accanto a baite di pastori sul monte Vranica.",
+      "fr": "Lac d'altitude à côté de huttes de bergers sur la montagne Vranica.",
+      "es": "Lago de gran altitud junto a cabañas de pastores en la montaña Vranica.",
+      "de": "Hoch gelegenes See bei Hirtenhütten am Vranica-Gebirge."
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.6269,
+    "lon": 17.5303,
+    "title": {
+      "en": "Blidinje Lake",
+      "bs": "Jezero Blidinje",
+      "it": "Lago Blidinje",
+      "fr": "Lac Blidinje",
+      "es": "Lago Blidinje",
+      "de": "Blidinje-See"
+    },
+    "cat": "lake",
+    "desc": {
+      "en": "Beautiful alpine lake inside Blidinje Nature Park.",
+      "bs": "Prekrasno alpsko jezero unutar Parka prirode Blidinje.",
+      "it": "Splendido lago alpino all'interno del Parco Naturale Blidinje.",
+      "fr": "Magnifique lac alpin dans le parc naturel de Blidinje.",
+      "es": "Hermoso lago alpino en el Parque Natural Blidinje.",
+      "de": "Wunderschöner Alpensee im Naturpark Blidinje."
+    },
+    "photo": null
+  },
+  {
+    "lat": 44.347438,
+    "lon": 17.228578,
+    "title": {
+      "en": "Jajce Watermills",
+      "bs": "Vodenice u Jajcu",
+      "it": "Mulini ad acqua di Jajce",
+      "fr": "Moulins à eau de Jajce",
+      "es": "Molinos de agua de Jajce",
+      "de": "Wassermühlen von Jajce"
+    },
+    "cat": "waterfall",
+    "desc": {
+      "en": "Historic mills on small cascades between the Pliva Lakes.",
+      "bs": "Historijski mlinovi na malim slapovima između Plivskih jezera.",
+      "it": "Storici mulini su piccole cascate tra i laghi Pliva.",
+      "fr": "Moulins historiques sur de petites cascades entre les lacs Pliva.",
+      "es": "Molinos históricos en pequeñas cascadas entre los lagos Pliva.",
+      "de": "Historische Mühlen auf kleinen Kaskaden zwischen den Pliva-Seen."
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.3371,
+    "lon": 17.8143,
+    "title": {
+      "en": "Old Bridge (Stari Most), Mostar",
+      "bs": "Stari most, Mostar",
+      "it": "Ponte Vecchio (Stari Most), Mostar",
+      "fr": "Vieux Pont (Stari Most), Mostar",
+      "es": "Puente Viejo (Stari Most), Mostar",
+      "de": "Alte Brücke (Stari Most), Mostar"
+    },
+    "cat": "historic",
+    "desc": {
+      "en": "UNESCO-listed Ottoman bridge symbolizing the city's heritage.",
+      "bs": "Osmanlijski most pod zaštitom UNESCO-a, simbol naslijeđa Mostara.",
+      "it": "Ponte ottomano patrimonio UNESCO, simbolo dell'eredità di Mostar.",
+      "fr": "Pont ottoman inscrit à l'UNESCO, symbole du patrimoine de Mostar.",
+      "es": "Puente otomano de Mostar, Patrimonio de la Humanidad por la UNESCO.",
+      "de": "UNESCO-geschützte osmanische Brücke, Symbol des Erbes von Mostar."
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.2578,
+    "lon": 17.9069,
+    "title": {
+      "en": "Dervish Monastery, Blagaj",
+      "bs": "Derviški tekija, Blagaj",
+      "it": "Monastero Derviscio, Blagaj",
+      "fr": "Monastère Derviche, Blagaj",
+      "es": "Monasterio Derviche, Blagaj",
+      "de": "Derwisch-Kloster, Blagaj"
+    },
+    "cat": "historic",
+    "desc": {
+      "en": "16th-century tekke built at the source of the Buna River.",
+      "bs": "Tekija iz 16. stoljeća sagrađena na izvoru rijeke Bune.",
+      "it": "Tekke del XVI secolo costruita alla sorgente del fiume Buna.",
+      "fr": "Tekke du XVIe siècle construite à la source de la rivière Buna.",
+      "es": "Takia del siglo XVI construida en el nacimiento del río Buna.",
+      "de": "Tekke aus dem 16. Jahrhundert, erbaut an der Quelle der Buna."
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.1364,
+    "lon": 17.7268,
+    "title": {
+      "en": "Počitelj",
+      "bs": "Počitelj",
+      "it": "Počitelj",
+      "fr": "Počitelj",
+      "es": "Počitelj",
+      "de": "Počitelj"
+    },
+    "cat": "historic",
+    "desc": {
+      "en": "A well-preserved medieval Herzegovinian stone fort town.",
+      "bs": "Dobro očuvan srednjovjekovni hercegovački grad od kamena.",
+      "it": "Città fortificata medievale d'Erzegovina ben conservata.",
+      "fr": "Ville fortifiée médiévale d'Herzégovine bien préservée.",
+      "es": "Ciudad fortificada medieval de Herzegovina bien conservada.",
+      "de": "Gut erhaltene mittelalterliche Steinburgstadt in Herzegowina."
+    },
+    "photo": null
+  },
+  {
+    "lat": 44.7083,
+    "lon": 18.625,
+    "title": {
+      "en": "Old Town Srebrenik",
+      "bs": "Stari grad Srebrenik",
+      "it": "Città Vecchia di Srebrenik",
+      "fr": "Vieille Ville de Srebrenik",
+      "es": "Ciudad Vieja de Srebrenik",
+      "de": "Altstadt von Srebrenik"
+    },
+    "cat": "historic",
+    "desc": {
+      "en": "One of the best-preserved medieval fortresses in BiH.",
+      "bs": "Jedna od najočuvanijih srednjovjekovnih tvrđava u BiH.",
+      "it": "Una delle fortezze medievali meglio conservate della BiH.",
+      "fr": "L'une des forteresses médiévales les mieux préservées de Bosnie-Herzégovine.",
+      "es": "Una de las fortalezas medievales mejor conservadas de Bosnia.",
+      "de": "Eine der best erhaltenen mittelalterlichen Festungen in Bosnien und Herzegowina."
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.4682,
+    "lon": 18.7348,
+    "title": {
+      "en": "Rataje Archaeological Site",
+      "bs": "Arheološko nalazište Rataje",
+      "it": "Sito Archeologico di Rataje",
+      "fr": "Site Archéologique de Rataje",
+      "es": "Sitio Arqueológico de Rataje",
+      "de": "Archäologische Stätte Rataje"
+    },
+    "cat": "historic",
+    "desc": {
+      "en": "Archaeological site featuring remains of ancient settlements.",
+      "bs": "Arheološko nalazište sa ostacima drevnih naselja.",
+      "it": "Sito archeologico con resti di antichi insediamenti.",
+      "fr": "Site archéologique présentant des vestiges d'anciens établissements.",
+      "es": "Sitio arqueológico con restos de antiguos asentamientos.",
+      "de": "Archäologische Stätte mit Überresten alter Siedlungen."
+    },
+    "photo": null
+  },
+  {
+    "lat": 44.5772,
+    "lon": 16.1264,
+    "title": {
+      "en": "Martin Brod (Great Una Waterfalls)",
+      "bs": "Martin Brod (Veliki slapovi Une)",
+      "it": "Martin Brod (Grandi Cascate dell'Una)",
+      "fr": "Martin Brod (Grandes Chutes de l'Una)",
+      "es": "Martin Brod (Grandes Cascadas del Una)",
+      "de": "Martin Brod (Große Una-Wasserfälle)"
+    },
+    "cat": "waterfall",
+    "desc": {
+      "en": "Scenic multi-step waterfalls in Una National Park.",
+      "bs": "Višestepeni slikoviti vodopadi u Nacionalnom parku Una.",
+      "it": "Cascate scenografiche a più livelli nel Parco Una.",
+      "fr": "Cascades panoramiques à plusieurs niveaux dans le parc national Una.",
+      "es": "Cascadas de varios niveles en el Parque Nacional Una.",
+      "de": "Malerische mehrstufige Wasserfälle im Una-Nationalpark."
+    },
+    "photo": null
+  },
+  {
+    "lat": 44.6469,
+    "lon": 16.0354,
+    "title": {
+      "en": "Štrbački Buk Waterfall",
+      "bs": "Vodopad Štrbački Buk",
+      "it": "Cascata Štrbački Buk",
+      "fr": "Cascade Štrbački Buk",
+      "es": "Cascada Štrbački Buk",
+      "de": "Wasserfall Štrbački Buk"
+    },
+    "cat": "waterfall",
+    "desc": {
+      "en": "The largest and most impressive Una River waterfall.",
+      "bs": "Najveći i najimpresivniji vodopad na rijeci Uni.",
+      "it": "La più grande ed impressionante cascata del fiume Una.",
+      "fr": "La plus grande et impressionnante cascade de la rivière Una.",
+      "es": "La cascada más grande e impresionante del río Una.",
+      "de": "Der größte und beeindruckendste Wasserfall der Una."
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.0805,
+    "lon": 17.9546,
+    "title": {
+      "en": "Provalije Waterfall (Vrelo Bregave)",
+      "bs": "Vodopad Provalije (Vrelo Bregave)",
+      "it": "Cascata Provalije (Vrelo Bregave)",
+      "fr": "Cascade Provalije (Vrelo Bregave)",
+      "es": "Cascada Provalije (Vrelo Bregave)",
+      "de": "Wasserfall Provalije (Vrelo Bregave)"
+    },
+    "cat": "waterfall",
+    "desc": {
+      "en": "Karst waterfall emerging from the Bregava spring.",
+      "bs": "Krški vodopad izvire iz vrela Bregave.",
+      "it": "Cascata carsica che nasce dalla sorgente Bregava.",
+      "fr": "Cascade karstique issue de la source Bregava.",
+      "es": "Cascada kárstica que brota del manantial Bregava.",
+      "de": "Karstwasserfall, der aus der Quelle Bregava entspringt."
+    },
+    "photo": null
+  },
+  {
+    "lat": 44.3468,
+    "lon": 17.2709,
+    "title": {
+      "en": "Pliva Waterfall, Jajce",
+      "bs": "Vodopad Pliva, Jajce",
+      "it": "Cascata Pliva, Jajce",
+      "fr": "Cascade Pliva, Jajce",
+      "es": "Cascada Pliva, Jajce",
+      "de": "Pliva-Wasserfall, Jajce"
+    },
+    "cat": "waterfall",
+    "desc": {
+      "en": "A picturesque waterfall located at the confluence of the Pliva and Vrbas rivers.",
+      "bs": "Slikovit vodopad na ušću Plive u Vrbas.",
+      "it": "Cascata pittoresca alla confluenza di Pliva e Vrbas.",
+      "fr": "Cascade pittoresque à la confluence des rivières Pliva et Vrbas.",
+      "es": "Cascada pintoresca en la confluencia de los ríos Pliva y Vrbas.",
+      "de": "Malerischer Wasserfall an der Mündung der Pliva in die Vrbas."
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.154121,
+    "lon": 17.603672,
+    "title": {
+      "en": "Kravica Waterfall",
+      "bs": "Vodopad Kravica",
+      "it": "Cascata Kravica",
+      "fr": "Cascade Kravica",
+      "es": "Cascada Kravica",
+      "de": "Kravica-Wasserfall"
+    },
+    "cat": "waterfall",
+    "desc": {
+      "en": "One of the most famous waterfalls in BiH with large tufa cascades.",
+      "bs": "Jedan od najpoznatijih vodopada u BiH s velikim sedrenim kaskadama.",
+      "it": "Una delle cascate più famose della Bosnia con grandi cascate di tufo.",
+      "fr": "L'une des cascades les plus célèbres de Bosnie avec de grandes cascades de tuf.",
+      "es": "Una de las cascadas más famosas de Bosnia con grandes cascadas de toba.",
+      "de": "Einer der bekanntesten Wasserfälle in Bosnien mit großen Tuffsteinkaskaden."
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.9486,
+    "lon": 18.4489,
+    "title": {
+      "en": "Skakavac Waterfall, Sarajevo",
+      "bs": "Vodopad Skakavac, Sarajevo",
+      "it": "Cascata Skakavac, Sarajevo",
+      "fr": "Cascade Skakavac, Sarajevo",
+      "es": "Cascada Skakavac, Sarajevo",
+      "de": "Skakavac-Wasserfall, Sarajevo"
+    },
+    "cat": "waterfall",
+    "desc": {
+      "en": "A 98-meter waterfall located north of Sarajevo.",
+      "bs": "98 metara visok vodopad sjeverno od Sarajeva.",
+      "it": "Cascata di 98 metri a nord di Sarajevo.",
+      "fr": "Cascade de 98 mètres située au nord de Sarajevo.",
+      "es": "Cascada de 98 metros ubicada al norte de Sarajevo.",
+      "de": "98 Meter hoher Wasserfall nördlich von Sarajevo."
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.36888,
+    "lon": 18.79638,
+    "title": {
+      "en": "Rafting Centar Drina-Tara",
+      "bs": "Rafting centar Drina-Tara",
+      "it": "Centro di rafting Drina-Tara",
+      "fr": "Centre de rafting Drina-Tara",
+      "es": "Centro de rafting Drina-Tara",
+      "de": "Raftingzentrum Drina-Tara"
+    },
+    "cat": "rafting",
+    "desc": {
+      "en": "Popular rafting center in Bastasi, Foča, located on the Drina and Tara rivers.",
+      "bs": "Popularni rafting centar u Bastasima kod Foče, smješten na Drini i Tari.",
+      "it": "Centro di rafting popolare a Bastasi, Foča, situato sui fiumi Drina e Tara.",
+      "fr": "Centre de rafting populaire à Bastasi, Foča, situé sur les rivières Drina et Tara.",
+      "es": "Centro de rafting popular en Bastasi, Foča, ubicado en los ríos Drina y Tara.",
+      "de": "Beliebtes Raftingzentrum in Bastasi, Foča, direkt am Drina und Tara."
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.36,
+    "lon": 18.81,
+    "title": {
+      "en": "Rafting Kamp Highlander",
+      "bs": "Rafting kamp Highlander",
+      "it": "Campo di rafting Highlander",
+      "fr": "Camp de rafting Highlander",
+      "es": "Campamento de rafting Highlander",
+      "de": "Rafting-Camp Highlander"
+    },
+    "cat": "rafting",
+    "desc": {
+      "en": "Rafting camp and adventure base in Bastasi, Foča.",
+      "bs": "Rafting kamp i avanturistička baza u Bastasima kod Foče.",
+      "it": "Campeggio rafting e base avventura a Bastasi, Foča.",
+      "fr": "Camp de rafting et base d'aventure à Bastasi, Foča.",
+      "es": "Campamento de rafting y base de aventuras en Bastasi, Foča.",
+      "de": "Rafting-Camp und Abenteuerbasis in Bastasi, Foča."
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.37,
+    "lon": 18.8,
+    "title": {
+      "en": "Rafting Centar Tara-Raft",
+      "bs": "Rafting centar Tara-Raft",
+      "it": "Centro di rafting Tara-Raft",
+      "fr": "Centre de rafting Tara-Raft",
+      "es": "Centro de rafting Tara-Raft",
+      "de": "Raftingzentrum Tara-Raft"
+    },
+    "cat": "rafting",
+    "desc": {
+      "en": "Center for rafting and outdoor sports on Tara River, Bastasi, Foča.",
+      "bs": "Centar za rafting i outdoor sportove na Tari, Bastasi, Foča.",
+      "it": "Centro per il rafting e sport outdoor sul Tara, Bastasi, Foča.",
+      "fr": "Centre de rafting et sports de plein air sur la Tara, Bastasi, Foča.",
+      "es": "Centro de rafting y deportes al aire libre en el río Tara, Bastasi, Foča.",
+      "de": "Zentrum für Rafting und Outdoor-Sport am Tara, Bastasi, Foča."
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.65,
+    "lon": 17.96,
+    "title": {
+      "en": "Rafting Neretva Centar",
+      "bs": "Rafting centar Neretva",
+      "it": "Centro di rafting Neretva",
+      "fr": "Centre de rafting Neretva",
+      "es": "Centro de rafting Neretva",
+      "de": "Raftingzentrum Neretva"
+    },
+    "cat": "rafting",
+    "desc": {
+      "en": "Rafting and adventure center in Konjic, on the Neretva River.",
+      "bs": "Centar za rafting i avanture u Konjicu na rijeci Neretvi.",
+      "it": "Centro rafting e avventure a Konjic, sul fiume Neretva.",
+      "fr": "Centre de rafting et aventures à Konjic, sur la Neretva.",
+      "es": "Centro de rafting y aventuras en Konjic, en el río Neretva.",
+      "de": "Rafting- und Abenteuerzentrum in Konjic, an der Neretva."
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.64,
+    "lon": 17.97,
+    "title": {
+      "en": "Rafting Konjic Centar",
+      "bs": "Rafting centar Konjic",
+      "it": "Centro di rafting Konjic",
+      "fr": "Centre de rafting Konjic",
+      "es": "Centro de rafting Konjic",
+      "de": "Raftingzentrum Konjic"
+    },
+    "cat": "rafting",
+    "desc": {
+      "en": "Main rafting base in Konjic, offering river adventures.",
+      "bs": "Glavna rafting baza u Konjicu, nudi avanture na rijeci.",
+      "it": "Base principale per il rafting a Konjic, offre avventure fluviali.",
+      "fr": "Base principale de rafting à Konjic, offrant des aventures sur la rivière.",
+      "es": "Principal base de rafting en Konjic, ofrece aventuras acuáticas.",
+      "de": "Haupt-Raftingbasis in Konjic bietet Flussabenteuer."
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.6402,
+    "lon": 17.9737,
+    "title": {
+      "en": "Raft Kor baza",
+      "bs": "Rafting baza Kor",
+      "it": "Base rafting Kor",
+      "fr": "Base de rafting Kor",
+      "es": "Base de rafting Kor",
+      "de": "Raftingbasis Kor"
+    },
+    "cat": "rafting",
+    "desc": {
+      "en": "Raft base at Polje Bijela, Konjic, starting point for rafting excursions.",
+      "bs": "Baza za rafting na Polju Bijela, Konjic.",
+      "it": "Base rafting a Polje Bijela, Konjic, punto di partenza delle escursioni.",
+      "fr": "Base de rafting à Polje Bijela, Konjic, point de départ des sorties.",
+      "es": "Base de rafting en Polje Bijela, Konjic, punto inicial de excursiones.",
+      "de": "Raftingbasis Polje Bijela, Konjic, Startpunkt für Touren."
+    },
+    "photo": null
+  },
+  {
+    "lat": 44.72,
+    "lon": 17.16,
+    "title": {
+      "en": "Vrbas Rafting Doo",
+      "bs": "Rafting centar Vrbas",
+      "it": "Centro di rafting Vrbas",
+      "fr": "Centre de rafting Vrbas",
+      "es": "Centro de rafting Vrbas",
+      "de": "Raftingzentrum Vrbas"
+    },
+    "cat": "rafting",
+    "desc": {
+      "en": "Rafting company located in Banja Luka, providing river sports on the Vrbas.",
+      "bs": "Rafting kompanija u Banjoj Luci, organizuje sportove na rijeci Vrbas.",
+      "it": "Compagnia rafting a Banja Luka, sport fluviali sul Vrbas.",
+      "fr": "Entreprise de rafting à Banja Luka, sports sur la Vrbas.",
+      "es": "Empresa de rafting en Banja Luka, deportes en el Vrbas.",
+      "de": "Raftingunternehmen in Banja Luka, Flusssport am Vrbas."
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.556,
+    "lon": 17.899,
+    "cat": "hiking",
+    "title": {
+      "en": "Prenj Mountain – Zelena Glava Peak",
+      "bs": "Prenj Mountain – Zelena Glava Peak",
+      "it": "Prenj Mountain – Zelena Glava Peak",
+      "fr": "Prenj Mountain – Zelena Glava Peak",
+      "es": "Prenj Mountain – Zelena Glava Peak",
+      "de": "Prenj Mountain – Zelena Glava Peak"
+    },
+    "desc": {
+      "en": "Location: Prenj Mountain – Zelena Glava Peak",
+      "bs": "Location: Prenj Mountain – Zelena Glava Peak",
+      "it": "Location: Prenj Mountain – Zelena Glava Peak",
+      "fr": "Location: Prenj Mountain – Zelena Glava Peak",
+      "es": "Location: Prenj Mountain – Zelena Glava Peak",
+      "de": "Location: Prenj Mountain – Zelena Glava Peak"
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.606,
+    "lon": 17.492,
+    "cat": "hiking",
+    "title": {
+      "en": "Čvrsnica Mountain – Pločno Peak",
+      "bs": "Čvrsnica Mountain – Pločno Peak",
+      "it": "Čvrsnica Mountain – Pločno Peak",
+      "fr": "Čvrsnica Mountain – Pločno Peak",
+      "es": "Čvrsnica Mountain – Pločno Peak",
+      "de": "Čvrsnica Mountain – Pločno Peak"
+    },
+    "desc": {
+      "en": "Location: Čvrsnica Mountain – Pločno Peak",
+      "bs": "Location: Čvrsnica Mountain – Pločno Peak",
+      "it": "Location: Čvrsnica Mountain – Pločno Peak",
+      "fr": "Location: Čvrsnica Mountain – Pločno Peak",
+      "es": "Location: Čvrsnica Mountain – Pločno Peak",
+      "de": "Location: Čvrsnica Mountain – Pločno Peak"
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.537,
+    "lon": 18.143,
+    "cat": "hiking",
+    "title": {
+      "en": "Rakitnica Canyon Viewpoint",
+      "bs": "Rakitnica Canyon Viewpoint",
+      "it": "Rakitnica Canyon Viewpoint",
+      "fr": "Rakitnica Canyon Viewpoint",
+      "es": "Rakitnica Canyon Viewpoint",
+      "de": "Rakitnica Canyon Viewpoint"
+    },
+    "desc": {
+      "en": "Location: Rakitnica Canyon Viewpoint",
+      "bs": "Location: Rakitnica Canyon Viewpoint",
+      "it": "Location: Rakitnica Canyon Viewpoint",
+      "fr": "Location: Rakitnica Canyon Viewpoint",
+      "es": "Location: Rakitnica Canyon Viewpoint",
+      "de": "Location: Rakitnica Canyon Viewpoint"
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.085,
+    "lon": 17.944,
+    "cat": "historical",
+    "title": {
+      "en": "Daorson Ancient City",
+      "bs": "Daorson Ancient City",
+      "it": "Daorson Ancient City",
+      "fr": "Daorson Ancient City",
+      "es": "Daorson Ancient City",
+      "de": "Daorson Ancient City"
+    },
+    "desc": {
+      "en": "Location: Daorson Ancient City",
+      "bs": "Location: Daorson Ancient City",
+      "it": "Location: Daorson Ancient City",
+      "fr": "Location: Daorson Ancient City",
+      "es": "Location: Daorson Ancient City",
+      "de": "Location: Daorson Ancient City"
+    },
+    "photo": null
+  },
+  {
+    "lat": 44.118,
+    "lon": 18.328,
+    "cat": "historical",
+    "title": {
+      "en": "Bobovac Royal City",
+      "bs": "Bobovac Royal City",
+      "it": "Bobovac Royal City",
+      "fr": "Bobovac Royal City",
+      "es": "Bobovac Royal City",
+      "de": "Bobovac Royal City"
+    },
+    "desc": {
+      "en": "Location: Bobovac Royal City",
+      "bs": "Location: Bobovac Royal City",
+      "it": "Location: Bobovac Royal City",
+      "fr": "Location: Bobovac Royal City",
+      "es": "Location: Bobovac Royal City",
+      "de": "Location: Bobovac Royal City"
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.824,
+    "lon": 17.457,
+    "cat": "lake",
+    "title": {
+      "en": "Ramsko Lake",
+      "bs": "Ramsko Lake",
+      "it": "Ramsko Lake",
+      "fr": "Ramsko Lake",
+      "es": "Ramsko Lake",
+      "de": "Ramsko Lake"
+    },
+    "desc": {
+      "en": "Location: Ramsko Lake",
+      "bs": "Location: Ramsko Lake",
+      "it": "Location: Ramsko Lake",
+      "fr": "Location: Ramsko Lake",
+      "es": "Location: Ramsko Lake",
+      "de": "Location: Ramsko Lake"
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.325,
+    "lon": 17.757,
+    "cat": "lake",
+    "title": {
+      "en": "Mostarsko Blato Seasonal Lake",
+      "bs": "Mostarsko Blato Seasonal Lake",
+      "it": "Mostarsko Blato Seasonal Lake",
+      "fr": "Mostarsko Blato Seasonal Lake",
+      "es": "Mostarsko Blato Seasonal Lake",
+      "de": "Mostarsko Blato Seasonal Lake"
+    },
+    "desc": {
+      "en": "Location: Mostarsko Blato Seasonal Lake",
+      "bs": "Location: Mostarsko Blato Seasonal Lake",
+      "it": "Location: Mostarsko Blato Seasonal Lake",
+      "fr": "Location: Mostarsko Blato Seasonal Lake",
+      "es": "Location: Mostarsko Blato Seasonal Lake",
+      "de": "Location: Mostarsko Blato Seasonal Lake"
+    },
+    "photo": null
+  },
+  {
+    "lat": 44.501,
+    "lon": 17.156,
+    "cat": "camping",
+    "title": {
+      "en": "Pecka Outdoor",
+      "bs": "Pecka Outdoor",
+      "it": "Pecka Outdoor",
+      "fr": "Pecka Outdoor",
+      "es": "Pecka Outdoor",
+      "de": "Pecka Outdoor"
+    },
+    "desc": {
+      "en": "Location: Pecka Outdoor",
+      "bs": "Location: Pecka Outdoor",
+      "it": "Location: Pecka Outdoor",
+      "fr": "Location: Pecka Outdoor",
+      "es": "Location: Pecka Outdoor",
+      "de": "Location: Pecka Outdoor"
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.347,
+    "lon": 17.263,
+    "cat": "nature-park",
+    "title": {
+      "en": "Peć Mlini Cave",
+      "bs": "Peć Mlini Cave",
+      "it": "Peć Mlini Cave",
+      "fr": "Peć Mlini Cave",
+      "es": "Peć Mlini Cave",
+      "de": "Peć Mlini Cave"
+    },
+    "desc": {
+      "en": "Location: Peć Mlini Cave",
+      "bs": "Location: Peć Mlini Cave",
+      "it": "Location: Peć Mlini Cave",
+      "fr": "Location: Peć Mlini Cave",
+      "es": "Location: Peć Mlini Cave",
+      "de": "Location: Peć Mlini Cave"
+    },
+    "photo": null
+  },
+  {
+    "lat": 44.35,
+    "lon": 18.13,
+    "cat": "nature-park",
+    "title": {
+      "en": "Tajan Protected Landscape",
+      "bs": "Tajan Protected Landscape",
+      "it": "Tajan Protected Landscape",
+      "fr": "Tajan Protected Landscape",
+      "es": "Tajan Protected Landscape",
+      "de": "Tajan Protected Landscape"
+    },
+    "desc": {
+      "en": "Location: Tajan Protected Landscape",
+      "bs": "Location: Tajan Protected Landscape",
+      "it": "Location: Tajan Protected Landscape",
+      "fr": "Location: Tajan Protected Landscape",
+      "es": "Location: Tajan Protected Landscape",
+      "de": "Location: Tajan Protected Landscape"
+    },
+    "photo": null
+  },
+  {
+    "lat": 42.843,
+    "lon": 17.985,
+    "cat": "nature-park",
+    "title": {
+      "en": "Vjetrenica Cave",
+      "bs": "Vjetrenica Cave",
+      "it": "Vjetrenica Cave",
+      "fr": "Vjetrenica Cave",
+      "es": "Vjetrenica Cave",
+      "de": "Vjetrenica Cave"
+    },
+    "desc": {
+      "en": "Location: Vjetrenica Cave",
+      "bs": "Location: Vjetrenica Cave",
+      "it": "Location: Vjetrenica Cave",
+      "fr": "Location: Vjetrenica Cave",
+      "es": "Location: Vjetrenica Cave",
+      "de": "Location: Vjetrenica Cave"
+    },
+    "photo": null
+  },
+  {
+    "lat": 44.273,
+    "lon": 17.111,
+    "cat": "nature-park",
+    "title": {
+      "en": "Janj Islands (Janjske Otoke)",
+      "bs": "Janj Islands (Janjske Otoke)",
+      "it": "Janj Islands (Janjske Otoke)",
+      "fr": "Janj Islands (Janjske Otoke)",
+      "es": "Janj Islands (Janjske Otoke)",
+      "de": "Janj Islands (Janjske Otoke)"
+    },
+    "desc": {
+      "en": "Location: Janj Islands (Janjske Otoke)",
+      "bs": "Location: Janj Islands (Janjske Otoke)",
+      "it": "Location: Janj Islands (Janjske Otoke)",
+      "fr": "Location: Janj Islands (Janjske Otoke)",
+      "es": "Location: Janj Islands (Janjske Otoke)",
+      "de": "Location: Janj Islands (Janjske Otoke)"
+    },
+    "photo": null
+  },
+  {
+    "lat": 44.56,
+    "lon": 16.179,
+    "cat": "hiking",
+    "title": {
+      "en": "Strbacki Buk Upper Trail",
+      "bs": "Strbacki Buk Upper Trail",
+      "it": "Strbacki Buk Upper Trail",
+      "fr": "Strbacki Buk Upper Trail",
+      "es": "Strbacki Buk Upper Trail",
+      "de": "Strbacki Buk Upper Trail"
+    },
+    "desc": {
+      "en": "Location: Strbacki Buk Upper Trail",
+      "bs": "Location: Strbacki Buk Upper Trail",
+      "it": "Location: Strbacki Buk Upper Trail",
+      "fr": "Location: Strbacki Buk Upper Trail",
+      "es": "Location: Strbacki Buk Upper Trail",
+      "de": "Location: Strbacki Buk Upper Trail"
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.304,
+    "lon": 18.69,
+    "cat": "lake",
+    "title": {
+      "en": "Donje Bare Lake",
+      "bs": "Donje Bare Lake",
+      "it": "Donje Bare Lake",
+      "fr": "Donje Bare Lake",
+      "es": "Donje Bare Lake",
+      "de": "Donje Bare Lake"
+    },
+    "desc": {
+      "en": "Location: Donje Bare Lake",
+      "bs": "Location: Donje Bare Lake",
+      "it": "Location: Donje Bare Lake",
+      "fr": "Location: Donje Bare Lake",
+      "es": "Location: Donje Bare Lake",
+      "de": "Location: Donje Bare Lake"
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.31,
+    "lon": 18.668,
+    "cat": "lake",
+    "title": {
+      "en": "Orlovačko Lake",
+      "bs": "Orlovačko Lake",
+      "it": "Orlovačko Lake",
+      "fr": "Orlovačko Lake",
+      "es": "Orlovačko Lake",
+      "de": "Orlovačko Lake"
+    },
+    "desc": {
+      "en": "Location: Orlovačko Lake",
+      "bs": "Location: Orlovačko Lake",
+      "it": "Location: Orlovačko Lake",
+      "fr": "Location: Orlovačko Lake",
+      "es": "Location: Orlovačko Lake",
+      "de": "Location: Orlovačko Lake"
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.851,
+    "lon": 17.014,
+    "cat": "nature-park",
+    "title": {
+      "en": "Livno Wild Horse Plateau",
+      "bs": "Livno Wild Horse Plateau",
+      "it": "Livno Wild Horse Plateau",
+      "fr": "Livno Wild Horse Plateau",
+      "es": "Livno Wild Horse Plateau",
+      "de": "Livno Wild Horse Plateau"
+    },
+    "desc": {
+      "en": "Location: Livno Wild Horse Plateau",
+      "bs": "Location: Livno Wild Horse Plateau",
+      "it": "Location: Livno Wild Horse Plateau",
+      "fr": "Location: Livno Wild Horse Plateau",
+      "es": "Location: Livno Wild Horse Plateau",
+      "de": "Location: Livno Wild Horse Plateau"
+    },
+    "photo": null
+  },
+  {
+    "lat": 42.711,
+    "lon": 18.353,
+    "cat": "hiking",
+    "title": {
+      "en": "Leotar Mountain Viewpoint",
+      "bs": "Leotar Mountain Viewpoint",
+      "it": "Leotar Mountain Viewpoint",
+      "fr": "Leotar Mountain Viewpoint",
+      "es": "Leotar Mountain Viewpoint",
+      "de": "Leotar Mountain Viewpoint"
+    },
+    "desc": {
+      "en": "Location: Leotar Mountain Viewpoint",
+      "bs": "Location: Leotar Mountain Viewpoint",
+      "it": "Location: Leotar Mountain Viewpoint",
+      "fr": "Location: Leotar Mountain Viewpoint",
+      "es": "Location: Leotar Mountain Viewpoint",
+      "de": "Location: Leotar Mountain Viewpoint"
+    },
+    "photo": null
+  },
+  {
+    "lat": 44.263,
+    "lon": 16.764,
+    "cat": "hiking",
+    "title": {
+      "en": "Klekovača Mountain",
+      "bs": "Klekovača Mountain",
+      "it": "Klekovača Mountain",
+      "fr": "Klekovača Mountain",
+      "es": "Klekovača Mountain",
+      "de": "Klekovača Mountain"
+    },
+    "desc": {
+      "en": "Location: Klekovača Mountain",
+      "bs": "Location: Klekovača Mountain",
+      "it": "Location: Klekovača Mountain",
+      "fr": "Location: Klekovača Mountain",
+      "es": "Location: Klekovača Mountain",
+      "de": "Location: Klekovača Mountain"
+    },
+    "photo": null
+  },
+  {
+    "lat": 43.467,
+    "lon": 17.707,
+    "cat": "hiking",
+    "title": {
+      "en": "Čabulja Mountain – Velika Vlajna",
+      "bs": "Čabulja Mountain – Velika Vlajna",
+      "it": "Čabulja Mountain – Velika Vlajna",
+      "fr": "Čabulja Mountain – Velika Vlajna",
+      "es": "Čabulja Mountain – Velika Vlajna",
+      "de": "Čabulja Mountain – Velika Vlajna"
+    },
+    "desc": {
+      "en": "Location: Čabulja Mountain – Velika Vlajna",
+      "bs": "Location: Čabulja Mountain – Velika Vlajna",
+      "it": "Location: Čabulja Mountain – Velika Vlajna",
+      "fr": "Location: Čabulja Mountain – Velika Vlajna",
+      "es": "Location: Čabulja Mountain – Velika Vlajna",
+      "de": "Location: Čabulja Mountain – Velika Vlajna"
+    },
+    "photo": null
+  },
+  {
+    "lat": 44.406,
+    "lon": 17.201,
+    "cat": "camping",
+    "title": {
+      "en": "Zelenkovac Eco Village",
+      "bs": "Zelenkovac Eco Village",
+      "it": "Zelenkovac Eco Village",
+      "fr": "Zelenkovac Eco Village",
+      "es": "Zelenkovac Eco Village",
+      "de": "Zelenkovac Eco Village"
+    },
+    "desc": {
+      "en": "Location: Zelenkovac Eco Village",
+      "bs": "Location: Zelenkovac Eco Village",
+      "it": "Location: Zelenkovac Eco Village",
+      "fr": "Location: Zelenkovac Eco Village",
+      "es": "Location: Zelenkovac Eco Village",
+      "de": "Location: Zelenkovac Eco Village"
+    },
+    "photo": null
+  }
+]
