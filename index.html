@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="bs">
 <head>
     <meta charset="utf-8" />
@@ -285,10 +285,10 @@
         }
 
         .control-card {
-            background: rgba(255, 255, 255, 0.9) !important; /* White transparent */
-            backdrop-filter: blur(20px) !important;
+            background: rgba(255, 255, 255, 0.85) !important; /* More transparent */
+            backdrop-filter: blur(15px) !important; /* Reduced blur */
             border-radius: 16px;
-            padding: 10px;
+            padding: 8px; /* Reduced padding */
             display: flex;
             gap: 8px;
             box-shadow: 0 8px 32px rgba(0,0,0,0.1);
@@ -297,16 +297,16 @@
 
         .layer-btn, .prof-btn {
             flex: 1;
-            padding: 12px 8px;
+            padding: 10px 6px; /* Reduced padding */
             border: none;
             border-radius: 12px;
             background: rgba(255, 255, 255, 0.7) !important; /* White transparent */
-            font-size: 14px;
+            font-size: 13px; /* Smaller font */
             font-weight: 600;
             color: #333;
             cursor: pointer;
             transition: all 0.2s;
-            min-height: 44px;
+            min-height: 38px; /* Reduced height */
             backdrop-filter: blur(10px);
         }
 
@@ -320,7 +320,7 @@
                 transform: scale(0.96);
             }
 
-        /* ===== SIDEBAR - TRANSPARENT WHITE ===== */
+        /* ===== SIDEBAR - SMALLER AND MORE TRANSPARENT ===== */
         #openSidebarBtn {
             position: fixed;
             left: 20px;
@@ -348,18 +348,18 @@
             position: fixed;
             top: 10px;
             left: 10px;
-            width: 85vw;
-            max-width: 320px;
+            width: 75vw; /* Reduced from 85vw */
+            max-width: 280px; /* Reduced from 320px */
             height: calc(100% - 20px);
-            background: rgba(255, 255, 255, 0.95) !important; /* White transparent */
-            backdrop-filter: blur(20px) saturate(180%);
+            background: rgba(255, 255, 255, 0.88) !important; /* More transparent */
+            backdrop-filter: blur(15px) saturate(180%); /* Reduced blur */
             z-index: 2000;
             transform: translateX(-100%);
             transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             display: flex;
             flex-direction: column;
-            box-shadow: 5px 0 30px rgba(0,0,0,0.1);
-            border-right: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 5px 0 20px rgba(0,0,0,0.08); /* Lighter shadow */
+            border-right: 1px solid rgba(255, 255, 255, 0.2);
             border-radius: 15px 0 0 15px;
         }
 
@@ -395,19 +395,22 @@
             min-width: 44px;
         }
 
-        /* ===== TRANSPARENT WHITE CATEGORY BAR ===== */
+        /* ===== IMPROVED CATEGORY BAR - EASIER TO SWIPE ===== */
         .category-bar {
-            padding: 15px;
+            padding: 12px 15px; /* Reduced padding */
             display: flex;
-            gap: 8px;
+            gap: 6px; /* Reduced gap */
             overflow-x: auto;
             white-space: nowrap;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-            background: rgba(255, 255, 255, 0.9) !important; /* White transparent */
-            backdrop-filter: blur(15px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08); /* Lighter border */
+            background: rgba(255, 255, 255, 0.85) !important; /* More transparent */
+            backdrop-filter: blur(10px); /* Reduced blur */
             -webkit-overflow-scrolling: touch;
             scrollbar-width: thin;
             scrollbar-color: var(--accent) transparent;
+            /* Prevent vertical movement */
+            touch-action: pan-x;
+            user-select: none;
         }
 
             .category-bar::-webkit-scrollbar {
@@ -424,18 +427,18 @@
             }
 
         .category-btn {
-            padding: 10px 15px;
-            background: rgba(255, 255, 255, 0.7) !important; /* White transparent */
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            border-radius: 25px;
-            font-size: 14px;
+            padding: 8px 12px; /* Reduced padding */
+            background: rgba(255, 255, 255, 0.7) !important; /* More transparent */
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px; /* Slightly smaller */
+            font-size: 13px; /* Smaller font */
             font-weight: 500;
             color: #555;
             cursor: pointer;
             transition: all 0.2s;
             flex-shrink: 0;
-            min-height: 44px;
-            backdrop-filter: blur(10px);
+            min-height: 36px; /* Reduced height */
+            backdrop-filter: blur(8px); /* Reduced blur */
         }
 
             .category-btn.active {
@@ -533,21 +536,21 @@
             backdrop-filter: blur(5px);
         }
 
-        /* ===== BOTTOM NAVIGATION - TRANSPARENT WHITE ===== */
+        /* ===== BOTTOM NAVIGATION - MORE TRANSPARENT ===== */
         .bottom-nav {
             position: fixed;
             bottom: max(env(safe-area-inset-bottom), 10px);
             left: 10px;
             right: 10px;
-            height: 70px;
-            background: rgba(255, 255, 255, 0.95) !important; /* White transparent */
-            backdrop-filter: blur(30px);
+            height: 65px; /* Reduced from 70px */
+            background: rgba(255, 255, 255, 0.92) !important; /* More transparent */
+            backdrop-filter: blur(20px); /* Reduced blur */
             border-top: 1px solid rgba(255,255,255,0.3);
             z-index: 1000;
             display: flex;
             justify-content: space-around;
             align-items: center;
-            padding: 0 10px;
+            padding: 0 8px; /* Reduced padding */
             border-radius: 20px;
             box-shadow: 0 -5px 20px rgba(0,0,0,0.1);
             border: 1px solid rgba(255,255,255,0.2);
@@ -560,14 +563,14 @@
             justify-content: center;
             background: none;
             border: none;
-            padding: 8px 12px;
+            padding: 6px 10px; /* Reduced padding */
             color: #666;
             font-size: 12px;
             cursor: pointer;
             border-radius: 10px;
             transition: all 0.2s;
-            min-width: 60px;
-            min-height: 44px;
+            min-width: 55px; /* Reduced width */
+            min-height: 40px; /* Reduced height */
         }
 
             .nav-btn:active {
@@ -601,22 +604,22 @@
             color: var(--red);
         }
 
-        /* ===== ROUTE PANEL - TRANSPARENT WHITE ===== */
+        /* ===== ROUTE PANEL - SMALLER AND MORE TRANSPARENT ===== */
         #routePanel {
             position: fixed;
-            bottom: 90px;
-            left: 15px;
-            right: 15px;
-            max-height: 40vh;
-            background: rgba(255, 255, 255, 0.95) !important; /* White transparent */
-            backdrop-filter: blur(35px);
-            border-radius: 20px;
-            padding: 20px;
+            bottom: 85px; /* Slightly higher */
+            left: 10px; /* Reduced from 15px */
+            right: 10px; /* Reduced from 15px */
+            max-height: 35vh; /* Reduced from 40vh */
+            background: rgba(255, 255, 255, 0.92) !important; /* More transparent */
+            backdrop-filter: blur(25px); /* Reduced blur */
+            border-radius: 16px; /* Slightly smaller */
+            padding: 15px; /* Reduced padding */
             z-index: 900;
-            box-shadow: 0 -10px 40px rgba(0,0,0,0.1);
+            box-shadow: 0 -8px 30px rgba(0,0,0,0.08); /* Lighter shadow */
             display: none;
             flex-direction: column;
-            border: 1px solid rgba(255,255,255,0.3);
+            border: 1px solid rgba(255,255,255,0.2);
             transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
@@ -761,22 +764,22 @@
             backdrop-filter: blur(5px);
         }
 
-        /* ===== NAVIGATION PANEL - TRANSPARENT WHITE ===== */
+        /* ===== NAVIGATION PANEL - SMALLER AND MORE TRANSPARENT ===== */
         #navPanel {
             position: fixed;
-            bottom: 90px;
-            left: 15px;
-            right: 15px;
-            max-height: 35vh;
-            background: rgba(255, 255, 255, 0.95) !important; /* White transparent */
-            backdrop-filter: blur(30px) saturate(180%);
-            border-radius: 20px;
-            padding: 15px;
+            bottom: 85px; /* Slightly higher */
+            left: 10px; /* Reduced from 15px */
+            right: 10px; /* Reduced from 15px */
+            max-height: 30vh; /* Reduced from 35vh */
+            background: rgba(255, 255, 255, 0.92) !important; /* More transparent */
+            backdrop-filter: blur(20px) saturate(180%); /* Reduced blur */
+            border-radius: 16px; /* Slightly smaller */
+            padding: 12px; /* Reduced padding */
             z-index: 900;
-            box-shadow: 0 -5px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 -5px 15px rgba(0,0,0,0.08); /* Lighter shadow */
             display: none;
             flex-direction: column;
-            border: 1px solid rgba(255, 255, 255, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.2);
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
@@ -928,7 +931,7 @@
             color: #666;
         }
 
-        /* ===== DETAILS MODAL - TRANSPARENT WHITE ===== */
+        /* ===== DETAILS MODAL - MORE TRANSPARENT ===== */
         #detailsModal {
             position: fixed;
             top: 0;
@@ -945,11 +948,11 @@
 
         .details-card {
             width: 100%;
-            max-height: 85vh;
-            background: rgba(255, 255, 255, 0.98) !important; /* White transparent */
-            backdrop-filter: blur(35px);
+            max-height: 80vh; /* Reduced from 85vh */
+            background: rgba(255, 255, 255, 0.95) !important; /* More transparent */
+            backdrop-filter: blur(25px); /* Reduced blur */
             border-radius: 30px 30px 0 0;
-            padding: 25px;
+            padding: 20px; /* Reduced padding */
             overflow-y: auto;
             position: relative;
             -webkit-overflow-scrolling: touch;
@@ -984,7 +987,7 @@
         }
 
         .details-title {
-            font-size: 24px;
+            font-size: 20px; /* Slightly smaller */
             font-weight: 700;
             color: var(--dark);
             margin: 0;
@@ -1053,12 +1056,12 @@
         .details-actions {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 10px;
-            margin-bottom: 10px;
+            gap: 8px; /* Reduced gap */
+            margin-bottom: 8px; /* Reduced margin */
         }
 
         .action-btn {
-            padding: 16px;
+            padding: 12px; /* Reduced padding */
             border: none;
             border-radius: 15px;
             font-size: 16px;
@@ -1069,7 +1072,7 @@
             align-items: center;
             justify-content: center;
             gap: 8px;
-            min-height: 44px;
+            min-height: 40px; /* Reduced height */
             backdrop-filter: blur(5px);
         }
 
@@ -1202,7 +1205,7 @@
             #routePanel,
             #navPanel,
             .details-card {
-                background: rgba(40, 40, 40, 0.95) !important; /* Dark transparent */
+                background: rgba(40, 40, 40, 0.92) !important; /* More transparent */
                 color: #ffffff;
                 border-color: rgba(255, 255, 255, 0.1);
             }
@@ -1235,7 +1238,7 @@
             }
 
             .category-bar {
-                background: rgba(40, 40, 40, 0.9) !important; /* Dark transparent */
+                background: rgba(40, 40, 40, 0.85) !important; /* More transparent */
                 border-color: rgba(255, 255, 255, 0.1);
             }
 
@@ -1352,12 +1355,12 @@
             }
 
             .layer-btn, .prof-btn {
-                font-size: 13px;
-                padding: 10px 6px;
+                font-size: 12px;
+                padding: 8px 4px;
             }
 
             .details-title {
-                font-size: 20px;
+                font-size: 18px;
             }
 
             .sidebar-header h2,
@@ -1408,8 +1411,8 @@
 
             .layer-btn,
             .prof-btn {
-                font-size: 12px;
-                padding: 8px 4px;
+                font-size: 11px;
+                padding: 6px 3px;
             }
 
             .nav-icon {
@@ -1518,7 +1521,34 @@
 
             #routePanel,
             #navPanel {
-                bottom: calc(90px + env(safe-area-inset-bottom));
+                bottom: calc(85px + env(safe-area-inset-bottom));
+            }
+        }
+
+        /* ===== IMPROVED TOUCH HANDLING FOR CATEGORIES ===== */
+        @media (max-width: 768px) {
+            .category-bar {
+                /* Enhanced touch scrolling */
+                scroll-snap-type: x mandatory;
+                scroll-padding: 0 15px;
+            }
+
+            .category-btn {
+                /* Better touch targets for categories */
+                scroll-snap-align: start;
+                touch-action: manipulation;
+                /* Prevent text selection */
+                -webkit-touch-callout: none;
+                -webkit-user-select: none;
+                user-select: none;
+            }
+
+            /* Add momentum scrolling for iOS */
+            .category-bar,
+            .location-list,
+            .waypoint-list,
+            .step-list {
+                -webkit-overflow-scrolling: touch;
             }
         }
     </style>
@@ -2125,11 +2155,33 @@
         function translate(key, lang = state.language) {
             const keys = key.split('.');
             let value = translations[lang];
+            if (!value) {
+                console.warn(`Language not found: ${lang}, defaulting to 'bs'`);
+                value = translations['bs'];
+            }
+            
             for (const k of keys) {
                 if (value && typeof value === 'object' && k in value) {
                     value = value[k];
                 } else {
-                    console.warn(`Translation not found for key: ${key} in language: ${lang}`);
+                    // Try to find in default language (bs)
+                    if (lang !== 'bs') {
+                        const defaultValue = translations['bs'];
+                        let defaultVal = defaultValue;
+                        for (const k2 of keys) {
+                            if (defaultVal && typeof defaultVal === 'object' && k2 in defaultVal) {
+                                defaultVal = defaultVal[k2];
+                            } else {
+                                defaultVal = undefined;
+                                break;
+                            }
+                        }
+                        if (defaultVal) {
+                            console.warn(`Translation not found for key: ${key} in language: ${lang}, using Bosnian`);
+                            return defaultVal;
+                        }
+                    }
+                    console.warn(`Translation not found for key: ${key} in any language`);
                     return key;
                 }
             }
@@ -2210,6 +2262,28 @@
 
                 state.map.addControl(new maplibregl.NavigationControl({ showCompass: true }), 'top-right');
                 state.map.addControl(new maplibregl.AttributionControl({ compact: true }), 'bottom-right');
+
+                // Add custom triangle icon for route arrows
+                state.map.on('style.load', () => {
+                    // Create a custom triangle icon for route arrows
+                    const size = 64;
+                    const canvas = document.createElement('canvas');
+                    canvas.width = size;
+                    canvas.height = size;
+                    const context = canvas.getContext('2d');
+                    
+                    // Draw a triangle pointing up
+                    context.fillStyle = '#ff7300';
+                    context.beginPath();
+                    context.moveTo(size/2, 10);
+                    context.lineTo(size-10, size-10);
+                    context.lineTo(10, size-10);
+                    context.closePath();
+                    context.fill();
+                    
+                    // Add the image to the map
+                    state.map.addImage('custom-triangle', canvas, { pixelRatio: 2 });
+                });
 
                 state.map.on('load', () => {
                     loadPlaces();
@@ -2292,9 +2366,14 @@
             categoryBar.appendChild(allBtn);
             const categories = [...new Set(state.places.map(p => p.cat))].sort();
             categories.forEach(cat => {
+                // Fix category name mapping
+                let displayCat = cat;
+                if (cat === 'historical') displayCat = 'historic';
+                if (cat === 'nature-park') displayCat = 'national_park';
+                
                 const count = state.places.filter(p => p.cat === cat).length;
                 const btn = create('button', 'category-btn');
-                btn.textContent = `${translate(`categories.${cat}`)} (${count})`;
+                btn.textContent = `${translate(`categories.${displayCat}`)} (${count})`;
                 btn.onclick = () => {
                     document.querySelectorAll('.category-btn').forEach(btn => btn.classList.remove('active'));
                     btn.classList.add('active');
@@ -2383,25 +2462,25 @@
                     className: 'custom-popup',
                     maxWidth: '280px'
                 }).setHTML(`
-                        <div style="padding: 5px;">
-                            <strong>${title}</strong><br>
-                            <small style="color: #666;">${access}</small>
-                            <div style="margin-top: 10px; display: flex; flex-direction: column; gap: 5px;">
-                                <a href="#" onclick="addAsStopFromPopup(${lat}, ${lon}, '${title.replace(/'/g, "\\'")}')"
-                                   style="display: block; padding: 10px 15px; background-color: rgba(255, 255, 255, 0.9); border: 1px solid rgba(255,255,255,0.3); border-radius: 8px; text-decoration: none; color: #495057; text-align: center; font-weight: 500;">
-                                    🛑 Add as Stop
-                                </a>
-                                <a href="#" onclick="addAsDestinationFromPopup(${lat}, ${lon}, '${title.replace(/'/g, "\\'")}')"
-                                   style="display: block; padding: 10px 15px; background-color: rgba(255, 255, 255, 0.9); border: 1px solid rgba(255,255,255,0.3); border-radius: 8px; text-decoration: none; color: #495057; text-align: center; font-weight: 500;">
-                                    🎯 Set as Destination
-                                </a>
-                                <a href="#" onclick="createRouteFromLastToPopup(${lat}, ${lon}, '${title.replace(/'/g, "\\'")}')"
-                                   style="display: block; padding: 10px 15px; background-color: rgba(255, 255, 255, 0.9); border: 1px solid rgba(255,255,255,0.3); border-radius: 8px; text-decoration: none; color: #495057; text-align: center; font-weight: 500;">
-                                    ➕ Continue Route
-                                </a>
+                            <div style="padding: 5px;">
+                                <strong>${title}</strong><br>
+                                <small style="color: #666;">${access}</small>
+                                <div style="margin-top: 10px; display: flex; flex-direction: column; gap: 5px;">
+                                    <a href="#" onclick="addAsStopFromPopup(${lat}, ${lon}, '${title.replace(/'/g, "\\'")}')"
+                                       style="display: block; padding: 10px 15px; background-color: rgba(255, 255, 255, 0.9); border: 1px solid rgba(255,255,255,0.3); border-radius: 8px; text-decoration: none; color: #495057; text-align: center; font-weight: 500;">
+                                        🛑 Add as Stop
+                                    </a>
+                                    <a href="#" onclick="addAsDestinationFromPopup(${lat}, ${lon}, '${title.replace(/'/g, "\\'")}')"
+                                       style="display: block; padding: 10px 15px; background-color: rgba(255, 255, 255, 0.9); border: 1px solid rgba(255,255,255,0.3); border-radius: 8px; text-decoration: none; color: #495057; text-align: center; font-weight: 500;">
+                                        🎯 Set as Destination
+                                    </a>
+                                    <a href="#" onclick="createRouteFromLastToPopup(${lat}, ${lon}, '${title.replace(/'/g, "\\'")}')"
+                                       style="display: block; padding: 10px 15px; background-color: rgba(255, 255, 255, 0.9); border: 1px solid rgba(255,255,255,0.3); border-radius: 8px; text-decoration: none; color: #495057; text-align: center; font-weight: 500;">
+                                        ➕ Continue Route
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                    `);
+                        `);
 
                 marker.setPopup(popup);
 
@@ -2544,6 +2623,7 @@
                 item.onclick = () => {
                     centerOnPlace(place);
                     openDetails(place);
+                    hideSidebarAfterAction(); // Hide sidebar when clicking location
                 };
 
                 const info = create('div', 'location-info');
@@ -2553,7 +2633,11 @@
                 info.appendChild(titleEl);
 
                 const catEl = create('div', 'location-category');
-                catEl.textContent = translate(`categories.${cat}`);
+                // Fix category name mapping
+                let displayCat = cat;
+                if (cat === 'historical') displayCat = 'historic';
+                if (cat === 'nature-park') displayCat = 'national_park';
+                catEl.textContent = translate(`categories.${displayCat}`);
                 info.appendChild(catEl);
 
                 const accessEl = create('div', 'location-access');
@@ -2848,14 +2932,14 @@ Or check your device settings:
             // Add popup with action
             const popup = new maplibregl.Popup({ offset: 25 })
                 .setHTML(`
-                        <div style="padding: 10px;">
-                            <strong>Your Location</strong><br>
-                            <button onclick="setMyLocationAsStart()"
-                                    style="margin-top: 5px; padding: 8px 12px; background: #ff7300; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 500;">
-                                🚀 Start Route From Here
-                            </button>
-                        </div>
-                    `);
+                            <div style="padding: 10px;">
+                                <strong>Your Location</strong><br>
+                                <button onclick="setMyLocationAsStart()"
+                                        style="margin-top: 5px; padding: 8px 12px; background: #ff7300; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 500;">
+                                    🚀 Start Route From Here
+                                </button>
+                            </div>
+                        `);
 
             state.myLocationMarker.setPopup(popup);
         }
@@ -2990,6 +3074,9 @@ Or check your device settings:
                                 geometry: {
                                     type: 'Point',
                                     coordinates: coord
+                                },
+                                properties: {
+                                    bearing: calculateBearing(coord, geometry.coordinates)
                                 }
                             }))
                         }
@@ -3000,8 +3087,8 @@ Or check your device settings:
                         type: 'symbol',
                         source: 'route-arrows',
                         layout: {
-                            'icon-image': 'triangle-15',
-                            'icon-size': 0.8,
+                            'icon-image': 'custom-triangle',
+                            'icon-size': 0.5,
                             'icon-rotate': ['get', 'bearing'],
                             'icon-allow-overlap': true,
                             'symbol-placement': 'point'
@@ -3024,6 +3111,25 @@ Or check your device settings:
             });
         }
 
+        function calculateBearing(point, coordinates) {
+            const pointIndex = coordinates.findIndex(coord => 
+                coord[0] === point[0] && coord[1] === point[1]
+            );
+            
+            if (pointIndex < 0 || pointIndex >= coordinates.length - 1) return 0;
+            
+            const from = coordinates[pointIndex];
+            const to = coordinates[pointIndex + 1];
+            
+            const y = Math.sin(to[0] - from[0]) * Math.cos(to[1]);
+            const x = Math.cos(from[1]) * Math.sin(to[1]) -
+                     Math.sin(from[1]) * Math.cos(to[1]) * Math.cos(to[0] - from[0]);
+            let bearing = Math.atan2(y, x) * (180 / Math.PI);
+            bearing = (bearing + 360) % 360;
+            
+            return bearing;
+        }
+
         // ===== ROUTE MANAGEMENT =====
         function addAsStop() {
             if (!state.detailsPlace) return;
@@ -3038,6 +3144,7 @@ Or check your device settings:
 
             updateRoutePanel();
             closeDetails();
+            hideSidebarAfterAction(); // Hide sidebar
 
             if (state.routePoints.length >= 2) {
                 calculateRoute();
@@ -3081,6 +3188,7 @@ Or check your device settings:
 
             updateRoutePanel();
             closeDetails();
+            hideSidebarAfterAction(); // Hide sidebar
 
             if (state.routePoints.length >= 2) {
                 calculateRoute();
@@ -3113,6 +3221,7 @@ Or check your device settings:
 
             updateRoutePanel();
             closeDetails();
+            hideSidebarAfterAction(); // Hide sidebar
 
             if (state.routePoints.length >= 2) {
                 calculateRoute();
@@ -3137,6 +3246,7 @@ Or check your device settings:
 
             updateRoutePanel();
             closeDetails();
+            hideSidebarAfterAction(); // Hide sidebar
 
             if (state.routePoints.length >= 2) {
                 calculateRoute();
@@ -3224,24 +3334,24 @@ Or check your device settings:
             if (state.routePoints.length === 0) {
                 const emptyMsg = create('div', 'waypoint-item');
                 emptyMsg.innerHTML = `
-                    <div style="text-align: center; padding: 20px;">
-                        <div style="font-size: 48px; margin-bottom: 10px;">📍</div>
-                        <div style="font-weight: bold; margin-bottom: 10px;">${translate('routeEmpty')}</div>
-                        <div style="color: #666; margin-bottom: 15px;">${translate('startNavigation')}:</div>
-                        <div style="color: #666; font-size: 14px; line-height: 1.5;">
-                            1. ${translate('startFromMe')}<br>
-                            2. ${translate('showRoute')}<br>
-                            3. ${translate('addWaypoint')}
+                        <div style="text-align: center; padding: 20px;">
+                            <div style="font-size: 48px; margin-bottom: 10px;">📍</div>
+                            <div style="font-weight: bold; margin-bottom: 10px;">${translate('routeEmpty')}</div>
+                            <div style="color: #666; margin-bottom: 15px;">${translate('startNavigation')}:</div>
+                            <div style="color: #666; font-size: 14px; line-height: 1.5;">
+                                1. ${translate('startFromMe')}<br>
+                                2. ${translate('showRoute')}<br>
+                                3. ${translate('addWaypoint')}
+                            </div>
+                            <div style="margin-top: 10px; padding: 8px; background: rgba(255, 215, 0, 0.1); border-radius: 8px; font-size: 12px; color: #996600;">
+                                ⚠️ ${translate('clearRoute')}: 5 ${translate('stopsLabel')}
+                            </div>
+                            <button onclick="setMyLocationAsStart()"
+                                    style="margin-top: 15px; padding: 10px 20px; background: #ff7300; color: white; border: none; border-radius: 10px; cursor: pointer; font-weight: bold;">
+                                🚀 ${translate('startFromMe')}
+                            </button>
                         </div>
-                        <div style="margin-top: 10px; padding: 8px; background: rgba(255, 215, 0, 0.1); border-radius: 8px; font-size: 12px; color: #996600;">
-                            ⚠️ ${translate('clearRoute')}: 5 ${translate('stopsLabel')}
-                        </div>
-                        <button onclick="setMyLocationAsStart()"
-                                style="margin-top: 15px; padding: 10px 20px; background: #ff7300; color: white; border: none; border-radius: 10px; cursor: pointer; font-weight: bold;">
-                            🚀 ${translate('startFromMe')}
-                        </button>
-                    </div>
-                `;
+                    `;
                 emptyMsg.style.justifyContent = 'center';
                 emptyMsg.style.textAlign = 'center';
                 waypointList.appendChild(emptyMsg);
@@ -3254,17 +3364,17 @@ Or check your device settings:
                 warningMsg.style.background = 'rgba(255, 100, 100, 0.1)';
                 warningMsg.style.border = '1px solid rgba(255, 100, 100, 0.3)';
                 warningMsg.innerHTML = `
-                    <div style="display: flex; align-items: center; padding: 10px; width: 100%;">
-                        <div style="font-size: 20px; margin-right: 10px;">⚠️</div>
-                        <div style="flex: 1;">
-                            <div style="font-weight: bold; color: #cc0000;">Too many waypoints</div>
-                            <div style="font-size: 12px; color: #666;">
-                                GraphHopper free tier only supports 5 waypoints.<br>
-                                Route will be simplified (first, last + 3 key points).
+                        <div style="display: flex; align-items: center; padding: 10px; width: 100%;">
+                            <div style="font-size: 20px; margin-right: 10px;">⚠️</div>
+                            <div style="flex: 1;">
+                                <div style="font-weight: bold; color: #cc0000;">Too many waypoints</div>
+                                <div style="font-size: 12px; color: #666;">
+                                    GraphHopper free tier only supports 5 waypoints.<br>
+                                    Route will be simplified (first, last + 3 key points).
+                                </div>
                             </div>
                         </div>
-                    </div>
-                `;
+                    `;
                 waypointList.appendChild(warningMsg);
             }
 
@@ -3386,6 +3496,7 @@ Or check your device settings:
 
             return false;
         }
+
         // Rate limiting protection
         let lastRouteRequest = 0;
         const MIN_REQUEST_INTERVAL = 2000; // 2 seconds between requests
@@ -3517,6 +3628,9 @@ Or check your device settings:
                 } else if (error.message.includes('400') && error.message.includes('Too many points')) {
                     alert('Too many waypoints for the routing service. Try with fewer points or use the simplified route.');
                     drawFallbackRoute(coordinates);
+                } else if (error.message.includes('Cannot find point')) {
+                    alert('Could not find a route between these points. The coordinates may be invalid or too far apart.');
+                    drawFallbackRoute(coordinates);
                 } else {
                     alert('Could not calculate route: ' + error.message);
                     // Fallback: draw straight lines between points if API fails
@@ -3593,14 +3707,14 @@ Or check your device settings:
             notice.style.background = 'rgba(255, 215, 0, 0.2)';
             notice.style.border = '1px solid rgba(255, 215, 0, 0.4)';
             notice.innerHTML = `
-                <div style="text-align: center; padding: 10px; width: 100%;">
-                    <div style="font-weight: bold; color: #996600; margin-bottom: 5px;">⚠️ Simplified Route</div>
-                    <div style="font-size: 12px; color: #666;">
-                        Showing ${displayedPoints} of ${totalPoints} waypoints due to API limits.<br>
-                        The route will connect the main points.
+                    <div style="text-align: center; padding: 10px; width: 100%;">
+                        <div style="font-weight: bold; color: #996600; margin-bottom: 5px;">⚠️ Simplified Route</div>
+                        <div style="font-size: 12px; color: #666;">
+                            Showing ${displayedPoints} of ${totalPoints} waypoints due to API limits.<br>
+                            The route will connect the main points.
+                        </div>
                     </div>
-                </div>
-            `;
+                `;
 
             // Insert at the top
             if (waypointList.firstChild) {
@@ -3683,6 +3797,7 @@ Or check your device settings:
 
         // ===== NAVIGATION FUNCTIONS =====
         function startNavigation() {
+            hideSidebarAfterAction(); // Hide sidebar when starting navigation
             if (state.routePoints.length < 2) {
                 alert('Please add at least 2 waypoints to start navigation');
                 return;
@@ -4030,7 +4145,11 @@ Or check your device settings:
             const access = place.access || 'car';
 
             $('detailTitle').textContent = title;
-            $('detailCategory').textContent = translate(`categories.${cat}`);
+            // Fix category name mapping
+            let displayCat = cat;
+            if (cat === 'historical') displayCat = 'historic';
+            if (cat === 'nature-park') displayCat = 'national_park';
+            $('detailCategory').textContent = translate(`categories.${displayCat}`);
             $('detailDesc').textContent = desc;
 
             const accessInfo = $('accessInfo');
@@ -4079,6 +4198,14 @@ Or check your device settings:
                 zoom: 14,
                 duration: 1000
             });
+        }
+
+        // ===== NEW FUNCTION TO HIDE SIDEBAR =====
+        function hideSidebarAfterAction() {
+            const sidebar = $('sidebar');
+            if (sidebar.classList.contains('open')) {
+                sidebar.classList.remove('open');
+            }
         }
 
         // ===== UI EVENT HANDLERS =====
@@ -4191,6 +4318,32 @@ Or check your device settings:
                             startY = null;
                         }
                     });
+
+                    // Improved touch handling for category bar
+                    const categoryBar = $('categoryBar');
+                    if (categoryBar) {
+                        let isScrolling = false;
+                        let startX = 0;
+                        let scrollLeft = 0;
+
+                        categoryBar.addEventListener('touchstart', (e) => {
+                            isScrolling = true;
+                            startX = e.touches[0].pageX - categoryBar.offsetLeft;
+                            scrollLeft = categoryBar.scrollLeft;
+                        });
+
+                        categoryBar.addEventListener('touchmove', (e) => {
+                            if (!isScrolling) return;
+                            e.preventDefault();
+                            const x = e.touches[0].pageX - categoryBar.offsetLeft;
+                            const walk = (x - startX) * 2;
+                            categoryBar.scrollLeft = scrollLeft - walk;
+                        });
+
+                        categoryBar.addEventListener('touchend', () => {
+                            isScrolling = false;
+                        });
+                    }
 
                     // Request location permission
                     if (navigator.permissions) {
