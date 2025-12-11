@@ -1,4 +1,4 @@
-<!DOCTYPE html><!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="bs">
 <head>
     <meta charset="utf-8" />
@@ -3452,7 +3452,13 @@
 
         // ===== FIXED ROUTE ARROW ICON FUNCTION =====
         function createRouteArrowIcon() {
-            if (!state.map || !state.map.loaded()) {
+            if (!state.map) {
+                setTimeout(createRouteArrowIcon, 500);
+                return;
+            }
+
+            // Wait for map to be fully loaded
+            if (!state.map.loaded() || !state.map.isStyleLoaded()) {
                 setTimeout(createRouteArrowIcon, 500);
                 return;
             }
@@ -3503,30 +3509,34 @@
                     const img = new Image();
                     img.onload = () => {
                         try {
-                            // Check if map is still loaded
-                            if (!state.map || !state.map.loaded()) {
-                                console.warn('Map not ready for image addition');
+                            // Check if map is still loaded and ready
+                            if (!state.map || !state.map.loaded() || !state.map.isStyleLoaded()) {
+                                console.log('Map not ready yet, retrying...');
+                                setTimeout(createRouteArrowIcon, 500);
                                 return;
                             }
 
-                            // Add the image to the map
-                            state.map.addImage('custom-triangle', img);
-                            console.log('Route arrow icon created successfully');
-                            routeIconAttempts = 0;
+                            // Add the image to the map - THIS IS THE CRITICAL PART
+                            state.map.once('idle', () => {
+                                if (!state.map.hasImage('custom-triangle')) {
+                                    state.map.addImage('custom-triangle', img);
+                                    console.log('Route arrow icon created successfully');
+                                    routeIconAttempts = 0;
 
-                            // Redraw route arrows if needed
-                            if (state.currentRoute && state.routePoints.length >= 2) {
-                                setTimeout(() => {
-                                    try {
-                                        createRouteArrows(state.currentRoute.points);
-                                    } catch (error) {
-                                        console.warn('Could not recreate route arrows:', error);
+                                    // Redraw route arrows if needed
+                                    if (state.currentRoute && state.routePoints.length >= 2) {
+                                        setTimeout(() => {
+                                            try {
+                                                createRouteArrows(state.currentRoute.points);
+                                            } catch (error) {
+                                                console.warn('Could not recreate route arrows:', error);
+                                            }
+                                        }, 500);
                                     }
-                                }, 500);
-                            }
+                                }
+                            });
                         } catch (error) {
                             console.error('Error adding route arrow image:', error);
-
                             routeIconAttempts++;
                             if (routeIconAttempts <= 3) {
                                 setTimeout(createRouteArrowIcon, 1000);
@@ -3554,28 +3564,59 @@
 
         // ===== CREATE ROUTE ARROWS FUNCTION =====
         function createRouteArrows(geometry) {
-            if (!state.map || !state.map.hasImage('custom-triangle')) {
-                console.log('Route arrow image not ready, skipping arrow creation');
+            // Double-check if map exists and is ready
+            if (!state.map || !state.map.loaded || !state.map.loaded() || !state.map.isStyleLoaded()) {
+                console.log('Map not ready for arrow creation');
+                setTimeout(() => createRouteArrows(geometry), 500);
+                return;
+            }
+
+            if (!state.map.hasImage || !state.map.hasImage('custom-triangle')) {
+                console.log('Arrow image not available, creating it first');
+                createRouteArrowIcon();
+                setTimeout(() => createRouteArrows(geometry), 1000);
                 return;
             }
 
             try {
-                // Remove existing arrow layer if it exists
-                if (state.map.getLayer('route-arrows')) {
-                    state.map.removeLayer('route-arrows');
+                // SAFELY remove existing arrow layer if it exists
+                try {
+                    if (state.map.getLayer && state.map.getLayer('route-arrows')) {
+                        state.map.removeLayer('route-arrows');
+                    }
+                } catch (layerError) {
+                    console.log('Could not remove route-arrows layer:', layerError.message);
                 }
-                if (state.map.getSource('route-arrows-source')) {
-                    state.map.removeSource('route-arrows-source');
+
+                try {
+                    if (state.map.getSource && state.map.getSource('route-arrows-source')) {
+                        state.map.removeSource('route-arrows-source');
+                    }
+                } catch (sourceError) {
+                    console.log('Could not remove route-arrows source:', sourceError.message);
                 }
 
                 // Sample points along the route for arrows
                 const coordinates = geometry.coordinates;
+
+                // Check if we have valid coordinates
+                if (!coordinates || coordinates.length < 2) {
+                    console.log('Not enough coordinates for arrows');
+                    return;
+                }
+
                 const arrowCoordinates = [];
                 const arrowSpacing = 100; // meters between arrows
 
                 for (let i = 0; i < coordinates.length - 1; i++) {
                     const from = coordinates[i];
                     const to = coordinates[i + 1];
+
+                    // Validate coordinates
+                    if (!from || !to || from.length < 2 || to.length < 2) {
+                        continue;
+                    }
+
                     const distance = turf.distance(turf.point(from), turf.point(to), { units: 'meters' });
 
                     // Add arrows along this segment
@@ -3603,40 +3644,61 @@
                     }
                 }
 
-                if (arrowCoordinates.length === 0) return;
+                if (arrowCoordinates.length === 0) {
+                    console.log('No arrow coordinates generated');
+                    return;
+                }
 
                 // Add arrow source
-                state.map.addSource('route-arrows-source', {
-                    type: 'geojson',
-                    data: {
-                        type: 'FeatureCollection',
-                        features: arrowCoordinates
-                    }
-                });
+                try {
+                    state.map.addSource('route-arrows-source', {
+                        type: 'geojson',
+                        data: {
+                            type: 'FeatureCollection',
+                            features: arrowCoordinates
+                        }
+                    });
+                } catch (sourceAddError) {
+                    console.error('Error adding arrow source:', sourceAddError);
+                    return;
+                }
 
                 // Add arrow layer
-                state.map.addLayer({
-                    id: 'route-arrows',
-                    type: 'symbol',
-                    source: 'route-arrows-source',
-                    layout: {
-                        'icon-image': 'custom-triangle',
-                        'icon-size': 0.7,
-                        'icon-rotate': ['get', 'bearing'],
-                        'icon-allow-overlap': true,
-                        'icon-ignore-placement': true
-                    },
-                    paint: {
-                        'icon-opacity': 0.8
-                    }
-                });
+                try {
+                    state.map.addLayer({
+                        id: 'route-arrows',
+                        type: 'symbol',
+                        source: 'route-arrows-source',
+                        layout: {
+                            'icon-image': 'custom-triangle',
+                            'icon-size': 0.7,
+                            'icon-rotate': ['get', 'bearing'],
+                            'icon-allow-overlap': true,
+                            'icon-ignore-placement': true
+                        },
+                        paint: {
+                            'icon-opacity': 0.8
+                        }
+                    });
 
-                console.log('Route arrows created successfully');
+                    console.log('Route arrows created successfully with ' + arrowCoordinates.length + ' arrows');
+                } catch (layerAddError) {
+                    console.error('Error adding arrow layer:', layerAddError);
+                    // Clean up the source if layer creation failed
+                    try {
+                        if (state.map.getSource('route-arrows-source')) {
+                            state.map.removeSource('route-arrows-source');
+                        }
+                    } catch (cleanupError) {
+                        // Ignore cleanup errors
+                    }
+                }
 
             } catch (error) {
                 console.error('Error creating route arrows:', error);
             }
         }
+
 
         // ===== CALCULATE BEARING FUNCTION =====
         function calculateBearing(point, coordinates) {
@@ -3901,25 +3963,25 @@
                     className: 'custom-popup',
                     maxWidth: '280px'
                 }).setHTML(`
-                        <div style="padding: 5px;">
-                            <strong>${title}</strong><br>
-                            <small style="color: var(--text-tertiary);">${access} • ${difficulty}</small>
-                            <div style="margin-top: 10px; display: flex; flex-direction: column; gap: 5px;">
-                                <a href="#" onclick="addAsStopFromPopup(${lat}, ${lon}, '${title.replace(/'/g, "\\'")}')"
-                                   style="display: block; padding: 10px 15px; background-color: var(--bg-tertiary); border: 1px solid var(--border-color); border-radius: 8px; text-decoration: none; color: var(--text-primary); text-align: center; font-weight: 500;">
-                                    🛑 ${translate('addStopBtn')}
-                                </a>
-                                <a href="#" onclick="addAsDestinationFromPopup(${lat}, ${lon}, '${title.replace(/'/g, "\\'")}')"
-                                   style="display: block; padding: 10px 15px; background-color: var(--bg-tertiary); border: 1px solid var(--border-color); border-radius: 8px; text-decoration: none; color: var(--text-primary); text-align: center; font-weight: 500;">
-                                    🎯 ${translate('addDestBtn')}
-                                </a>
-                                <a href="#" onclick="createRouteFromLastToPopup(${lat}, ${lon}, '${title.replace(/'/g, "\\'")}')"
-                                   style="display: block; padding: 10px 15px; background-color: var(--bg-tertiary); border: 1px solid var(--border-color); border-radius: 8px; text-decoration: none; color: var(--text-primary); text-align: center; font-weight: 500;">
-                                    ➕ ${translate('continueRouteBtn').replace('➕ ', '')}
-                                </a>
+                            <div style="padding: 5px;">
+                                <strong>${title}</strong><br>
+                                <small style="color: var(--text-tertiary);">${access} • ${difficulty}</small>
+                                <div style="margin-top: 10px; display: flex; flex-direction: column; gap: 5px;">
+                                    <a href="#" onclick="addAsStopFromPopup(${lat}, ${lon}, '${title.replace(/'/g, "\\'")}')"
+                                       style="display: block; padding: 10px 15px; background-color: var(--bg-tertiary); border: 1px solid var(--border-color); border-radius: 8px; text-decoration: none; color: var(--text-primary); text-align: center; font-weight: 500;">
+                                        🛑 ${translate('addStopBtn')}
+                                    </a>
+                                    <a href="#" onclick="addAsDestinationFromPopup(${lat}, ${lon}, '${title.replace(/'/g, "\\'")}')"
+                                       style="display: block; padding: 10px 15px; background-color: var(--bg-tertiary); border: 1px solid var(--border-color); border-radius: 8px; text-decoration: none; color: var(--text-primary); text-align: center; font-weight: 500;">
+                                        🎯 ${translate('addDestBtn')}
+                                    </a>
+                                    <a href="#" onclick="createRouteFromLastToPopup(${lat}, ${lon}, '${title.replace(/'/g, "\\'")}')"
+                                       style="display: block; padding: 10px 15px; background-color: var(--bg-tertiary); border: 1px solid var(--border-color); border-radius: 8px; text-decoration: none; color: var(--text-primary); text-align: center; font-weight: 500;">
+                                        ➕ ${translate('continueRouteBtn').replace('➕ ', '')}
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                    `);
+                        `);
 
                 marker.setPopup(popup);
 
@@ -4280,29 +4342,29 @@
         function removeRouteLayers() {
             if (!state.map) return;
 
-            // Remove main route layer
+            // Remove main route layer safely
             if (routeLayerId) {
                 try {
-                    if (state.map.getLayer(routeLayerId)) {
+                    if (state.map.getLayer && state.map.getLayer(routeLayerId)) {
                         state.map.removeLayer(routeLayerId);
                     }
                 } catch (e) {
-                    console.warn('Could not remove route layer:', e);
+                    // Ignore errors
                 }
 
                 try {
-                    if (state.map.getSource(routeSourceId)) {
+                    if (state.map.getSource && state.map.getSource(routeSourceId)) {
                         state.map.removeSource(routeSourceId);
                     }
                 } catch (e) {
-                    console.warn('Could not remove route source:', e);
+                    // Ignore errors
                 }
             }
 
-            // Remove dashed lines
+            // Remove dashed lines safely
             state.routeDashedLines.forEach((line) => {
                 try {
-                    if (state.map.getLayer(line.layerId)) {
+                    if (state.map.getLayer && state.map.getLayer(line.layerId)) {
                         state.map.removeLayer(line.layerId);
                     }
                 } catch (e) {
@@ -4310,7 +4372,7 @@
                 }
 
                 try {
-                    if (state.map.getSource(line.sourceId)) {
+                    if (state.map.getSource && state.map.getSource(line.sourceId)) {
                         state.map.removeSource(line.sourceId);
                     }
                 } catch (e) {
@@ -4319,9 +4381,9 @@
             });
             state.routeDashedLines = [];
 
-            // Remove arrows
+            // Remove arrows safely
             try {
-                if (state.map.getLayer('route-arrows')) {
+                if (state.map.getLayer && state.map.getLayer('route-arrows')) {
                     state.map.removeLayer('route-arrows');
                 }
             } catch (e) {
@@ -4329,37 +4391,11 @@
             }
 
             try {
-                if (state.map.getSource('route-arrows-source')) {
+                if (state.map.getSource && state.map.getSource('route-arrows-source')) {
                     state.map.removeSource('route-arrows-source');
                 }
             } catch (e) {
                 // Ignore
-            }
-
-            // Clean up any other arrow-related layers/sources
-            const style = state.map.getStyle();
-            if (style && style.layers) {
-                style.layers.forEach(layer => {
-                    if (layer.id && layer.id.includes('arrow')) {
-                        try {
-                            state.map.removeLayer(layer.id);
-                        } catch (e) {
-                            // Ignore
-                        }
-                    }
-                });
-            }
-
-            if (style && style.sources) {
-                Object.keys(style.sources).forEach(sourceId => {
-                    if (sourceId.includes('arrow')) {
-                        try {
-                            state.map.removeSource(sourceId);
-                        } catch (e) {
-                            // Ignore
-                        }
-                    }
-                });
             }
         }
 
@@ -4657,14 +4693,14 @@
             notice.style.background = 'rgba(255, 215, 0, 0.2)';
             notice.style.border = '1px solid rgba(255, 215, 0, 0.4)';
             notice.innerHTML = `
-                    <div style="text-align: center; padding: 10px; width: 100%;">
-                        <div style="font-weight: bold; color: #996600; margin-bottom: 5px;">⚠️ Simplified Route</div>
-                        <div style="font-size: 12px; color: var(--text-tertiary);">
-                            Showing ${displayedPoints} of ${totalPoints} waypoints due to API limits.<br>
-                            The route will connect the main points.
+                        <div style="text-align: center; padding: 10px; width: 100%;">
+                            <div style="font-weight: bold; color: #996600; margin-bottom: 5px;">⚠️ Simplified Route</div>
+                            <div style="font-size: 12px; color: var(--text-tertiary);">
+                                Showing ${displayedPoints} of ${totalPoints} waypoints due to API limits.<br>
+                                The route will connect the main points.
+                            </div>
                         </div>
-                    </div>
-                `;
+                    `;
 
             if (waypointList.firstChild) {
                 waypointList.insertBefore(notice, waypointList.firstChild);
@@ -4708,21 +4744,21 @@
             if (state.routePoints.length === 0) {
                 const emptyMsg = create('div', 'waypoint-item');
                 emptyMsg.innerHTML = `
-                        <div style="text-align: center; padding: 20px;">
-                            <div style="font-size: 48px; margin-bottom: 10px;">📍</div>
-                            <div style="font-weight: bold; margin-bottom: 10px;">${translate('routeEmpty')}</div>
-                            <div style="color: var(--text-tertiary); margin-bottom: 15px;">${translate('startNavigation')}:</div>
-                            <div style="color: var(--text-tertiary); font-size: 14px; line-height: 1.5;">
-                                1. ${translate('startFromMeText')}<br>
-                                2. ${translate('routeText')}<br>
-                                3. ${translate('addStopBtn').replace('🛑 ', '')}
+                            <div style="text-align: center; padding: 20px;">
+                                <div style="font-size: 48px; margin-bottom: 10px;">📍</div>
+                                <div style="font-weight: bold; margin-bottom: 10px;">${translate('routeEmpty')}</div>
+                                <div style="color: var(--text-tertiary); margin-bottom: 15px;">${translate('startNavigation')}:</div>
+                                <div style="color: var(--text-tertiary); font-size: 14px; line-height: 1.5;">
+                                    1. ${translate('startFromMeText')}<br>
+                                    2. ${translate('routeText')}<br>
+                                    3. ${translate('addStopBtn').replace('🛑 ', '')}
+                                </div>
+                                <button onclick="setMyLocationAsStart()"
+                                        style="margin-top: 15px; padding: 10px 20px; background: var(--accent); color: white; border: none; border-radius: 10px; cursor: pointer; font-weight: bold;">
+                                    🚀 ${translate('startFromMeText')}
+                                </button>
                             </div>
-                            <button onclick="setMyLocationAsStart()"
-                                    style="margin-top: 15px; padding: 10px 20px; background: var(--accent); color: white; border: none; border-radius: 10px; cursor: pointer; font-weight: bold;">
-                                🚀 ${translate('startFromMeText')}
-                            </button>
-                        </div>
-                    `;
+                        `;
                 emptyMsg.style.justifyContent = 'center';
                 emptyMsg.style.textAlign = 'center';
                 waypointList.appendChild(emptyMsg);
@@ -5162,18 +5198,28 @@
                 title: title
             });
             updateRoutePanel();
+
             if (state.routePoints.length >= 2) {
                 calculateRouteWithThrottle();
             }
+
+            state.markers.forEach(marker => {
+                if (marker.getPopup() && marker.getPopup().isOpen()) {
+                    marker.togglePopup();
+                }
+            });
+
+            toggleRoutePanel();
         }
 
         function addAsDestinationFromPopup(lat, lon, title) {
-            if (state.routePoints.length === 0 && !state.myLocation) {
-                getMyLocation();
-                return;
-            }
-
             if (state.routePoints.length === 0) {
+                if (!state.myLocation) {
+                    alert(translate('noLocation'));
+                    getMyLocation();
+                    return;
+                }
+
                 state.routePoints = [
                     { lat: state.myLocation.lat, lon: state.myLocation.lon, title: translate('myLocation') },
                     { lat: lat, lon: lon, title: title }
@@ -5183,9 +5229,18 @@
             }
 
             updateRoutePanel();
+
             if (state.routePoints.length >= 2) {
                 calculateRouteWithThrottle();
             }
+
+            state.markers.forEach(marker => {
+                if (marker.getPopup() && marker.getPopup().isOpen()) {
+                    marker.togglePopup();
+                }
+            });
+
+            toggleRoutePanel();
         }
 
         function createRouteFromLastToPopup(lat, lon, title) {
@@ -5196,9 +5251,18 @@
 
             state.routePoints.push({ lat: lat, lon: lon, title: title });
             updateRoutePanel();
+
             if (state.routePoints.length >= 2) {
                 calculateRouteWithThrottle();
             }
+
+            state.markers.forEach(marker => {
+                if (marker.getPopup() && marker.getPopup().isOpen()) {
+                    marker.togglePopup();
+                }
+            });
+
+            toggleRoutePanel();
         }
 
         function calculateDynamicZoom(speed) {
@@ -5357,29 +5421,66 @@
 
         // ===== DETAILS MODAL =====
         function openDetails(place) {
+            console.log('Opening details for place:', place); // Debug log
+
+            if (!place) {
+                console.error('No place data provided');
+                return;
+            }
+
             state.detailsPlace = place;
 
-            const title = place.title?.[state.language] || place.title?.en || place.title;
-            const desc = place.desc?.[state.language] || place.desc?.en || '';
-            const cat = place.cat;
+            // Safely get title
+            let title = 'No Title';
+            if (place.title) {
+                if (typeof place.title === 'object' && place.title[state.language]) {
+                    title = place.title[state.language];
+                } else if (place.title.en) {
+                    title = place.title.en;
+                } else if (typeof place.title === 'string') {
+                    title = place.title;
+                }
+            }
+
+            // Safely get description
+            let desc = 'No description available';
+            if (place.desc) {
+                if (typeof place.desc === 'object' && place.desc[state.language]) {
+                    desc = place.desc[state.language];
+                } else if (place.desc.en) {
+                    desc = place.desc.en;
+                } else if (typeof place.desc === 'string') {
+                    desc = place.desc;
+                }
+            }
+
+            const cat = place.cat || 'unknown';
             const access = place.access || 'car';
             const difficulty = place.difficulty || 'easy';
             const duration = place.duration || 2;
             const distance = place.distance || 5;
             const elevation = place.elevation || 300;
 
+            console.log('Setting details:', { title, cat, access }); // Debug log
+
             $('detailTitle').textContent = title;
+
+            // Translate category
             let displayCat = cat;
             if (cat === 'historical') displayCat = 'historic';
             if (cat === 'nature-park') displayCat = 'national_park';
-            $('detailCategory').textContent = translate(`categories.${displayCat}`);
-            $('detailDesc').textContent = desc;
 
-            $('detailDifficulty').textContent = translate(`difficulty${difficulty.charAt(0).toUpperCase() + difficulty.slice(1)}`);
-            $('detailDuration').textContent = `${duration} ${translate('timeLabel').toLowerCase()}`;
+            // Make sure the category exists in translations
+            const categoryTranslation = translate(`categories.${displayCat}`);
+            $('detailCategory').textContent = categoryTranslation || displayCat;
+
+            $('detailDesc').textContent = desc;
+            $('detailDifficulty').textContent = translate(`difficulty${difficulty.charAt(0).toUpperCase() + difficulty.slice(1)}`) || difficulty;
+            $('detailDuration').textContent = `${duration} ${translate('durationLabel').toLowerCase() || 'hours'}`;
             $('detailDistance').textContent = `${distance} km`;
             $('detailElevation').textContent = `${elevation} m`;
 
+            // Handle access info
             const accessInfo = $('accessInfo');
             const accessDetails = $('accessDetails');
 
@@ -5394,19 +5495,31 @@
                 accessInfo.style.display = 'none';
             }
 
+            // Handle image
             const imageEl = $('detailImage');
-            if (place.photo) {
+            if (place.photo && place.photo.trim() !== '') {
+                console.log('Setting image URL:', place.photo); // Debug log
                 imageEl.style.backgroundImage = `url(${place.photo})`;
                 imageEl.style.backgroundSize = 'cover';
                 imageEl.style.backgroundPosition = 'center';
                 imageEl.innerHTML = '';
             } else {
+                console.log('No image available, using placeholder'); // Debug log
                 imageEl.style.backgroundImage = 'none';
                 imageEl.style.backgroundColor = 'var(--bg-tertiary)';
                 imageEl.innerHTML = '<div style="display: flex; align-items: center; justify-content: center; height: 100%; color: var(--text-tertiary); font-size: 48px;">🏔️</div>';
             }
 
+            // Update button text
+            $('addStopBtn').textContent = translate('addStopBtn');
+            $('addDestBtn').textContent = translate('addDestBtn');
+            $('routeFromMeBtn').textContent = translate('routeFromMeBtn');
+            $('continueRouteBtn').textContent = translate('continueRouteBtn');
+            $('closeDetailsBtn').textContent = translate('closeDetailsBtn');
+
+            // Show the modal
             $('detailsModal').style.display = 'flex';
+            console.log('Details modal shown'); // Debug log
         }
 
         function closeDetails() {
@@ -5567,10 +5680,10 @@
             weatherData.forecast.forEach(day => {
                 const dayEl = create('div', 'weather-day');
                 dayEl.innerHTML = `
-                        <div class="weather-day-name">${day.day}</div>
-                        <div class="weather-day-icon wi ${day.icon}"></div>
-                        <div class="weather-day-temp">${day.temp}°C</div>
-                    `;
+                            <div class="weather-day-name">${day.day}</div>
+                            <div class="weather-day-icon wi ${day.icon}"></div>
+                            <div class="weather-day-temp">${day.temp}°C</div>
+                        `;
                 forecast.appendChild(dayEl);
             });
         }
@@ -5775,6 +5888,59 @@
 
         // ===== EVENT LISTENERS =====
         function initializeEventListeners() {
+            // Add this at the top of your initializeEventListeners function
+            let touchStartTime = 0;
+            let touchStartX = 0;
+            let touchStartY = 0;
+
+            document.addEventListener('touchstart', (e) => {
+                touchStartTime = Date.now();
+                touchStartX = e.touches[0].clientX;
+                touchStartY = e.touches[0].clientY;
+                startX = touchStartX; // Keep for existing code
+                startY = touchStartY;
+            }, { passive: true });
+
+            document.addEventListener('touchmove', (e) => {
+                // Let scrolling happen naturally unless we're definitely swiping
+                const currentX = e.touches[0].clientX;
+                const currentY = e.touches[0].clientY;
+                const diffX = touchStartX - currentX;
+                const diffY = touchStartY - currentY;
+
+                // Only handle horizontal swipes from edge
+                const isHorizontalSwipe = Math.abs(diffX) > Math.abs(diffY) * 2;
+                const isFromLeftEdge = touchStartX < 30; // Very close to left edge
+                const isLargeSwipe = Math.abs(diffX) > 50;
+
+                if (isHorizontalSwipe && isFromLeftEdge && isLargeSwipe && e.cancelable) {
+                    e.preventDefault();
+
+                    // Open/close sidebar based on swipe direction
+                    if (diffX < -50 && !state.sidebarVisible) { // Swipe right to open
+                        toggleSidebar();
+                    } else if (diffX > 50 && state.sidebarVisible) { // Swipe left to close
+                        toggleSidebar();
+                    }
+                }
+            }, { passive: false });
+
+            document.addEventListener('touchend', (e) => {
+                const touchDuration = Date.now() - touchStartTime;
+                const endX = e.changedTouches[0].clientX;
+                const endY = e.changedTouches[0].clientY;
+                const diffX = touchStartX - endX;
+                const diffY = touchStartY - endY;
+
+                // Quick swipe detection (less than 300ms)
+                if (touchDuration < 300 && Math.abs(diffX) > 50 && Math.abs(diffY) < 30) {
+                    if (touchStartX < 50) { // From left edge
+                        if (diffX < -50 && !state.sidebarVisible) { // Swipe right
+                            toggleSidebar();
+                        }
+                    }
+                }
+            }, { passive: true });
             // Landing page
             $('continueBtn').addEventListener('click', enterApp);
 
@@ -5879,32 +6045,35 @@
             });
 
             // Swipe gestures for sidebar
+
             let startX, startY;
             document.addEventListener('touchstart', (e) => {
                 startX = e.touches[0].clientX;
                 startY = e.touches[0].clientY;
             });
-
             document.addEventListener('touchmove', (e) => {
                 if (!startX || !startY) return;
                 const diffX = startX - e.touches[0].clientX;
                 const diffY = startY - e.touches[0].clientY;
 
-                // Open sidebar with right swipe from left edge
-                if (startX < 50 && diffX < -100 && Math.abs(diffY) < 50) {
-                    toggleSidebar();
-                    startX = null;
-                    startY = null;
-                }
+                // Check if we should handle the swipe
+                const shouldHandleSwipe =
+                    (startX < 50 && diffX < -100 && Math.abs(diffY) < 50) || // Open sidebar
+                    (diffX > 100 && Math.abs(diffY) < 50); // Close sidebar
 
-                // Close sidebar with left swipe
-                if (diffX > 100 && Math.abs(diffY) < 50) {
+                if (shouldHandleSwipe) {
+                    // Only prevent default if it's cancelable (won't cause warning)
+                    if (e.cancelable) {
+                        e.preventDefault();
+                    }
+
+                    // Handle the swipe action
                     toggleSidebar();
                     startX = null;
                     startY = null;
                 }
-            });
-        }
+            }, { passive: false }); // Important: Set passive to false to allow preventDefault
+        } // <-- ADD THIS CLOSING BRACE - it closes the initializeEventListeners function
 
         // ===== START THE APP =====
         // Initialize the app when DOM is loaded
@@ -5915,4 +6084,4 @@
         }
     </script>
 </body>
-    </html>
+</html>

@@ -1,21 +1,29 @@
 {
   "name": "BiH Outdoor Guide",
   "short_name": "BiH Guide",
-  "description": "Outdoor guide for Bosnia and Herzegovina",
-  "start_url": "/",
+  "description": "Explore the natural wonders of Bosnia and Herzegovina",
+  "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#ffffff",
+  "orientation": "portrait",
+  "background_color": "#ff7300",
   "theme_color": "#ff7300",
   "icons": [
     {
-      "src": "logo.png",
+      "src": "./favicon.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     },
     {
-      "src": "logo512.png",
+      "src": "./logo.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     }
-  ]
+  ],
+  "categories": [ "navigation", "travel", "outdoors" ],
+  "lang": "bs",
+  "dir": "ltr",
+  "prefer_related_applications": false,
+  "related_applications": []
 }
